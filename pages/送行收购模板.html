@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Menu-content-type" Menu-content="text/html; charset=utf-8">
+<title>行</title>
+
+<link href="" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<style>
+	#header{
+		width: 100%;
+		height: 90px;
+			}
+	/************************************上面是头部信息************************************************************/
+	#content{
+		display: inline-block;
+		width: 100%;
+		
+		
+
+	}
+	/*******************上面是内容区定义********************************************/
+	#content .search{
+		
+		height: 400px;
+		
+		background-image: url(../img/xing/xing.png);	//背景图
+		 background-repeat:no-repeat;	
+		 background-position: center bottom;	
+		 padding-top: 300px;
+			
+	}
+	#content .search .inputsearch{
+		width:60%;
+		margin: auto;
+	}
+	#content .search .searchbutton{
+		background: #21B796;
+		color:white;
+		height:60px;
+		width:40%;
+		border-radius: 30px;
+		font-size: 36px;
+		margin-left:30%;
+	}
+	/******************************上面是内容区搜索样式****************************************************/
+	#content .leftcontent{
+		margin-top: 10px;
+		margin-right: 1px;
+		float:left;
+		width: 18%;
+		height: 750px;
+		background:#EAC9A1;
+	}
+	#content .leftcontent .leftheader{
+		width: 100%;
+		height: 40px;
+		background: #D69343;
+		text-align: center;
+		font-size: 20px;
+		color: white;
+	}
+	#content .wrapmenu{
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
+
+	}
+	 #content .leftcontent .Menu-title{
+	 			cursor:pointer;
+                width:100%;
+                height:40px;
+				text-align: center;
+				font-size: 18px;
+                line-height:40px;
+                background:#000;
+                color:#B77858;
+                margin-bottom:1px;
+            }
+      #content .leftcontent .Menu-content{
+              	width:100%;
+              	background: #EAC9A1;
+                display:none;
+            }
+      #content .leftcontent .Menu-content a{
+				font-size: 18px;
+				font-weight:bold;
+              	color: #FFFFFF;
+              	
+      }
+      #content .leftcontent .Menu-content a:hover{
+
+      	color:#A75D3F;
+      }
+      #content #newxingcheng{
+      	margin-top:220px;
+      	width: 60%;
+      	height: 50px;
+      	margin-left:19%;
+      	margin-right: 20%;
+      	margin-bottom: 50px;
+		color:#A96245;
+      	background:#FFFFFF;
+      	font-size: 22px;
+      	border-radius: 30px;
+      	border: 0;
+     
+      }
+	/***********************上面是左侧，下面都是右侧*********************************/
+	#content .wrap{
+		margin:10px auto;
+		width: 90%;
+		height: 85%;
+		
+	}
+	#content .rightcontent{
+		margin-top: 10px;
+		float:left;
+		width: 80%;
+		height: 750px;
+		background: #F7E9D9;
+	}
+	/****************************上面是右边内容区定义********************************************************/
+	#content .rightcontent .result{
+		float:left;
+		margin:10px 1%;
+		width: 23%;
+		height: 300px;
+		background: white;
+		border-radius: 20px;
+
+	}
+	#content .rightcontent .result .begin{
+		width: 90%;
+		height: 70px;
+		margin:10px auto;
+		border: 1px solid red;
+	}
+	#content .rightcontent .result .end{
+		width: 90%;
+		height: 70px;
+		margin:10px auto;
+		border: 1px solid red;
+	}
+	#content .rightcontent .result .contact{
+		width: 90%;
+		height: 70px;
+		margin:10px auto;
+		border: 1px solid red;
+	}
+	#content .rightcontent .result .vehicle{
+		width: 90%;
+		height: 30px;
+		margin:10px auto;
+		border: 1px solid red;
+	}
+
+	/*****************************上面是右边内容区查询结果定义*********************************************/
+	#content .rightcontent .fenye{
+		width: 80%;
+		height: 50px;
+		margin: 5px auto;
+		text-align: center;
+
+	}
+	
+      /******************************上面是内容区右边定义********************************************/
+	#footer{
+		width: 100%;
+		height: 50px;
+			}
+	
+
+
+</style>
+<body>
+ <div id="header"> <object style="border:0px" type="text/x-scriptlet" data="header.html" width=100%></object></div>   
+ <div id="content">
+ 	<div class="search">
+ 		<div class="input-group inputsearch">
+               <button class="searchbutton">创建新行程</button>
+                    
+               </span>
+            </div><!-- /input-group -->
+     </div>
+          <div id="wenzi-1"></div>
+	<div class="leftcontent">
+		<div class="leftheader"><span>行程</span></div>
+		 
+        <div class="wrapmenu">
+        <div class="Menu-title">
+          全部行程
+        </div>
+        <div class="Menu-content">
+            <a href="">同城</a><br/>
+            <a href="">城际</a><br/>
+            <a href="">国际</a><br/>
+        </div>
+        <div class="Menu-title">
+          同城
+        </div>
+        <div class="Menu-content">
+            <a href="">b1</a><br/>
+            <a href="">b2</a><br/>
+            <a href="">b3</a><br/>
+            <a href="">b4</a><br/>
+            
+        </div>
+        </div><!--wrapmenu-->
+        <button type="button" class=""btn btn-info btn-lg" id="newxingcheng">新建行程</button>
+	</div><!--leftcontent-->
+	
+	<div class="rightcontent">
+		<div class="wrap">
+		<div class="result">
+			<div class="begin"></div>
+			<div class="end"></div>
+			<div class="contact"></div>
+			
+		</div>
+		<div class="result">
+			<div class="begin"></div>
+			<div class="end"></div>
+			<div class="contact"></div>
+			
+		</div>
+		<div class="result">
+			<div class="begin"></div>
+			<div class="end"></div>
+			<div class="contact"></div>
+			
+		</div>
+		<div class="result">
+			<div class="begin"></div>
+			<div class="end"></div>
+			<div class="contact"></div>
+			
+		</div>
+		<div class="result">
+			<div class="begin"></div>
+			<div class="end"></div>
+			<div class="contact"></div>
+			
+		</div>
+		<div class="result">
+			<div class="begin"></div>
+			<div class="end"></div>
+			<div class="contact"></div>
+			
+			
+		</div>
+		<div class="result">
+			<div class="begin"></div>
+			<div class="end"></div>
+			<div class="contact"></div>
+						
+		</div>
+		<div class="result">
+			<div class="begin"></div>
+			<div class="end"></div>
+			<div class="contact"></div>
+		</div>
+	</div><!--wrap-->
+	<div class="fenye">
+		<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+	</div>
+	</div><!--rightcontent-->
+ </div><!--content-->
+ <div id="footer"><object data="footer.html" type="text" width="100%"></object></div>
+</body>
+<script src="../js/public/jquery.js"></script>
+<script>
+ $(".Menu-title").click(function(){
+                $(this).next().slideToggle();
+                });
+
+</script>
+</html>

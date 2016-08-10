@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+  }
+  #section0 {padding-top:50px;height:500px;color: #fff; background-color: #ABF0F1;}
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section5 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  
+  #xinxi1{
+    float:left;
+  }
+  #xinxi2{
+    float:left;
+  }
+  #xinxi3{
+    float:left;
+  }
+
+
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">发功能键</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section0">发布新订单</a></li>
+          <li><a href="#section1">待接单</a></li>
+          <li><a href="#section2">待付款</a></li>
+          <li><a href="#section3">运送中</a></li>
+          <li><a href="#section4">已完成</a></li>
+          <li><a href="#section5">已取消</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section0" class="container-fluid">
+<h3>发,需求</h3>
+<div id="xinxi1" class="col-xs-12">
+<div class="col-xs-1" style="margin-top:50px;" >
+  <label for="fhr">发货人</label>
+  <input class="form-control" id="fhr" type="text">
+</div>
+
+<div class="col-xs-1" style="margin-top:50px;" >
+  <label for="dh">电话</label>
+  <input class="form-control" id="dh" type="text">
+</div>
+
+<div class="col-xs-1" style="margin-top:50px;" >
+  <label for="fhr">签收人</label>
+  <input class="form-control" id="fhr" type="text">
+</div>
+
+<div class="col-xs-1" style="margin-top:50px;" >
+  <label for="dh">电话</label>
+  <input class="form-control" id="dh" type="text">
+</div>
+</div>
+
+<div id="xinxi2" class="col-xs-12">
+<div class="col-xs-4" style="margin-top:50px;" >
+  <label for="pk">取货地址</label>
+  <input class="form-control" id="pk" type="text">
+</div>
+
+<div class="col-xs-3" style="margin-top:50px;">
+  <label for="pktime">取货时间</label>
+  <input class="form-control" id="pktime" type="datetime">
+</div>
+</div>
+
+<div id="xinxi3" class="col-xs-12">
+<div class="col-xs-4" style="margin-top:50px;">
+  <label for="pk">收货地址</label>
+  <input class="form-control" id="sh" type="text">
+</div>
+
+<div class="col-xs-3" style="margin-top:50px;">
+  <label for="shtime">收货时间</label>
+  <input class="form-control" id="shtime" type="text">
+</div>
+</div>
+<div class="col-xs-1" style="margin-top:50px;" >
+  <label for="wp">物品名称</label>
+  <input class="form-control" id="wpmc" type="text">
+</div>
+
+<div class="col-xs-1" style="margin-top:50px;" >
+  <label for="wpzl">物品重量</label>
+  <input class="form-control" id="wpzl" type="text">
+</div>
+
+<div class="col-xs-1" style="margin-top:50px;" >
+  <label for="wpjz">物品价值</label>
+  <input class="form-control" id="wpjz" type="text">
+</div>
+
+<div class="col-xs-2" style="margin-top:50px; color:gray" >
+ <ul class="list-group">
+  <li class="list-group-item">距离：4.6KM</li>
+  <li class="list-group-item">参考报酬</li>
+</ul>
+</div>
+
+<div class="col-xs-1" style="margin-top:50px;" >
+  <label for="bc">报酬</label>
+  <input class="form-control" id="bc" type="text">
+</div>
+
+<button type="button" class="btn btn-default">发布</button>
+</div>
+
+
+<div id="section1" class="container-fluid">
+<div class="col-xs-2" id="dz1">
+  <h3>商品名称</h3>
+  <p>发单时间:16-07-21 13:46</p>
+  <p>起：中国深圳-终：加拿大</p>
+  <button type="button" class="btn btn-default">查看详情</button>
+  </div>
+  <div class="col-xs-2" id="dz2">
+  <h3>商品名称</h3>
+  <p>发单时间：16-07-18 13:00</p>
+  <p>起：中国北京-终：加拿大</p>
+  <button type="button" class="btn btn-default">查看详情</button>
+  </div>
+</div>
+<div id="section2" class="container-fluid">
+ <h3>商品名称</h3>
+  <p>发单时间:16-07-21 13:46</p>
+  <p>起：中国深圳-终：加拿大</p>
+  <button type="button" class="btn btn-default">查看详情</button>
+  </div>
+  <div class="col-xs-2" id="dz2">
+  <h3>商品名称</h3>
+  <p>发单时间：16-07-18 13:00</p>
+  <p>起：中国北京-终：加拿大</p>
+  <button type="button" class="btn btn-default">查看详情</button>
+  </div>
+<div id="section3" class="container-fluid">
+  <div class="col-xs-2" id="dz2">
+  <h3>商品名称</h3>
+  <p>发单时间：16-07-18 13:00</p>
+  <p>起：中国北京-终：加拿大</p>
+  <button type="button" class="btn btn-default">查看详情</button>
+  </div>
+</div>
+<div id="section41" class="container-fluid">
+  <h1>Section 4 Submenu 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section42" class="container-fluid">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+</body>
+</html>
