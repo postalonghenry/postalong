@@ -54,6 +54,9 @@ color: black !important;
 .formbottom{
 margin-bottom: 0;
 }
+.formbottom1{
+margin-bottom: 5px;
+}
 .form-group input{
 	background: lightgrey;
 	border:solid 1px gray;
@@ -77,10 +80,16 @@ margin-bottom: 0;
 	
 	vertical-align: top;
 }
+.staffinfo1{
+	display: inline-block;
+	width:49%;
+	
+	vertical-align: top;
+}
 
 
 .staffimg {
-	width: 100%;
+	width: 80%;
 	border-radius: 10px;
 	overflow: hidden;
 	
@@ -133,7 +142,7 @@ margin-bottom: 0;
 }
 .form-groupp p{
 	margin-top: 5px;
-	font-size: large;
+	font-size: normal;
 }
 .plusimg img{
 	margin-left: auto;
@@ -150,9 +159,16 @@ margin-bottom: 0;
 	margin-top: 10px;
 	margin-bottom: 10px
 }
+
 .checkbox1{
 	width: 49%;
 	display: inline-block;
+}
+
+
+.checkbox2{
+	text-align: center;
+	margin-bottom: 10px;
 }
 .fabu1{
 	background: #21b796;
@@ -162,3 +178,23 @@ margin-bottom: 0;
 	height: 29px;
 	box-shadow: 1px 2px 1px grey;	
 }
+.fabu3{
+	background: #21b796;
+	border:1px solid white;
+	color: white;
+	width: 80%;
+	height: 29px;
+	box-shadow: 1px 2px 1px grey;	
+	margin-left: 15px;
+}
+
+.fabu2{
+	background: lightgrey;
+	border:1px solid white;
+	color: white;
+	width: 80%;
+	height: 29px;
+	box-shadow: 1px 2px 1px grey;	
+	margin-left: 15px;
+}
+
