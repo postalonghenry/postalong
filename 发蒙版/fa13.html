@@ -40,7 +40,8 @@
 			bottom: 10%;
 			background: #FFFFFF;
 			border-radius: 10px;	
-			z-index: 100;	
+			z-index: 100;
+			box-shadow: 0px 0px 30px  #0B0F0D;	
 			}
 	 #child1 #top{
 	 	width: 90%;
@@ -56,6 +57,23 @@
 		float: left;
 		line-height:63px; 
 		 }
+	#child1 #top .topmiddle{
+		width: 30%;
+		height: 63px;
+		float: left;
+		line-height:63px; 
+		background: #21B796;
+		border-radius: 20px;
+		border:1px solid white;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 63px;
+		font-size: 20px;
+	}
+	#child1 #top .topmiddle b{
+		color: #FFFFFF;
+
+	}
 	 #child1 #top .righttop{
 		width: 45%;
 		height: 63px;
@@ -197,19 +215,23 @@
 		height: 22%;
 		float: left;
 		}
-		#footer .footerleft .footerleftbottom #cancel{
+		#footer .footerleft .footerleftbottom .cancel{
 		margin-left:10%;
 		width: 221px;
-		background:#949599;
-		color: #FFFFFF;
-		margin-top:3px;
-	}
-	#footer .footerleft .footerleftbottom #editor{
-		margin-left:10%;
-		width: 221px;
+		height: 61px;
 		background:#21B796;
 		color: #FFFFFF;
 		margin-top:3px;
+		box-shadow: 10px 10px 5px #B6B6B6;
+	}
+	#footer .footerleft .footerleftbottom .editor{
+		margin-left:10%;
+		width: 221px;
+		height: 61px;
+		background:#FFCC02;
+		color: #FFFFFF;
+		margin-top:3px;
+		box-shadow: 10px 10px 5px #B6B6B6;
 	}
 	#footer .footerright{
 		width: 40%;
@@ -231,7 +253,10 @@
 	<div id="child1">
 		<div id="top">
 			<div class="lefttop"><span>物品名称：蓝莓</span></div>
-			<div class="righttop"><span>订单号：1111111111111 <img alt="待接单" src="../img/fa/待接单.png"></span></div><!--righttop-->
+			<div class="topmiddle">
+				<p><b>递送人收获码</b>12345698</p>
+			</div>
+			<div class="righttop"><span>订单号：1111111111111 <img alt="待接单" src="../img/fa/已取货.png"></span></div><!--righttop-->
 		</div><!--top-->
 		<div id="middle">
 			<div class="middletop">
@@ -267,12 +292,12 @@
 					物品描述：保持外包装完好，谢谢。
 				</div>
 				<div class="footerleftbottom">
-					<button class="btn btn-default btn-lg" id="cancel">取消</button>
-					<button class="btn btn-default btn-lg" id="editor">支付</button>
+					<button class="btn btn-default btn-lg cancel">拨打电话</button>
+					<button class="btn btn-default btn-lg editor">行程追踪</button>
 				</div>
 			</div><!--footerleft-->
 			<div class="footerright">
-				<img src="../img/fa/blueberry.jpg" alt="">
+				<img src="../img/fa/map.png" alt="">
 			</div><!--footerright-->
 		</div><!--footer-->
 	</div><!--child1-->

@@ -40,7 +40,8 @@
 			bottom: 10%;
 			background: #FFFFFF;
 			border-radius: 10px;	
-			z-index: 100;	
+			z-index: 100;
+			box-shadow: 10px 10px 5px #151A19;
 			}
 	 #child1 #top{
 	 	width: 90%;
@@ -197,19 +198,23 @@
 		height: 22%;
 		float: left;
 		}
-		#footer .footerleft .footerleftbottom #cancel{
+		#footer .footerleft .footerleftbottom .cancel{
 		margin-left:10%;
 		width: 221px;
+		height: 61px;
 		background:#949599;
 		color: #FFFFFF;
 		margin-top:3px;
+		box-shadow: 10px 10px 5px #A0A0A0;
 	}
-	#footer .footerleft .footerleftbottom #editor{
+	#footer .footerleft .footerleftbottom .editor{
 		margin-left:10%;
 		width: 221px;
+		height: 61px;
 		background:#21B796;
 		color: #FFFFFF;
 		margin-top:3px;
+		box-shadow: 10px 10px 5px #A0A0A0;
 	}
 	#footer .footerright{
 		width: 40%;
@@ -267,8 +272,8 @@
 					物品描述：保持外包装完好，谢谢。
 				</div>
 				<div class="footerleftbottom">
-					<button class="btn btn-default btn-lg" id="cancel">取消</button>
-					<button class="btn btn-default btn-lg" id="editor">查看异价</button>
+					<button class="btn btn-default btn-lg cancel" >取消</button>
+					<button class="btn btn-default btn-lg editor" >查看议价</button>
 				</div>
 			</div><!--footerleft-->
 			<div class="footerright">
