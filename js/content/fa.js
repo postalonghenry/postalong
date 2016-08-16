@@ -107,13 +107,13 @@ $(".fapostformwhite").prev().clone(true).insertBefore('.fapostformwhite')
 $('.orderpublish').click(function() {
 	
 	if ($("#pendingorder").addClass('show')) {
-		$(this).parentsUntil('.biaoji').css('display', 'none');
+		
+		$('.biaoji').hide();
 		
 
 	} else {
 		$("#pendingorder").addClass('show')
-		$(this).parentsUntil('.biaoji').css('display', 'none');
-		
+		$('.biaoji').hide();
 
 	}
 	
