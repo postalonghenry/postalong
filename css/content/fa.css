@@ -1,0 +1,677 @@
+#header{
+		width: 100%;
+		height: 90px;
+		}
+	/************************************ÉÏÃæÊÇÍ·²¿ÐÅÏ¢************************************************************/
+	#content{
+		display: inline-block;
+		width: 100%;
+		background: #BFEAE1;
+		margin:1px auto;
+
+		
+		}
+	/*******************ÉÏÃæÊÇÄÚÈÝÇø¶¨Òå********************************************/
+	#content .search{		
+		height: 400px;		
+		background-image: url(../img/fa/fa.png);	//±³¾°Í¼	
+		-moz-background-size:100% 400px;
+		-webkit-background-size:100% 400px;
+		-o-background-size:100% 400px;
+		background-size:100% 400px;
+     	background-position: left bottom;	 	
+			
+	}
+	#content .search .leftlink{
+		float:left;
+		margin-top: 0px;
+		padding-top:10px;
+		width: 5%;
+		height: 380px;
+		}
+	#content .search .leftlink .leftlinkmenu{
+
+		width: 60px;
+		height: 60px;
+		border-radius:50%;		
+		margin:auto;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 60px;
+		background:#FFFFFF;
+		opacity: 0.5;
+		
+		font-weight: bold;
+	}
+	#content .search .leftlink .leftlinkmenu a:link{
+		color: #BFEAE1;
+	}
+	#content .search .leftlink #menuwhite a:hover{
+		color: #64B7A1;
+	}
+	#content .search .leftlink #menuwhite{
+	width: 60px;
+		height: 60px;																						
+		border-radius:50%;
+		margin:auto;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 60px;
+		background:#FFFFFF;
+		opacity: 1;
+		
+		font-weight: bold;
+
+	}
+	
+/****************ÉÏÃæÊÇsearchÀïÃæ×ó±ßµÄÁù¸öÔ²µÄÑùÊ½**************************************/
+	
+
+	#content .search .inputsearch{
+		float: right;
+		margin-top: 0px;
+		width:95%;
+		height: 400px;
+		/*border: 1px solid yellow;*/
+		float:right;
+		
+	}
+	#content .search .inputsearch .pageintroduce{
+
+		float:left;
+		width: 95%;
+		height: 120px;
+		color: #FFFFFF;
+		font-size: 600%;
+		font-weight:bold;
+		line-height: 120px;
+		padding-left: 8%;
+		}
+	#content .search .inputsearch .searchbuttonwrap{
+
+	float:left;
+		width: 95%;
+		height: 280px;
+		padding-top:180px;
+		
+	}
+	#content .search .inputsearch .searchbuttonwrap input{
+
+		float:right;
+		height: 30px;
+		width: 16%;
+		border-radius:12px;
+		border:0px;
+		text-align: center;
+		
+		 background:url(../img/fa/magnifier.png) no-repeat right center;
+		 background-size: 10% auto;
+background-color: #FFFFFF;
+
+	}
+
+	#content .search .inputsearch #searchbutton{
+		background: #21B796;
+		color:white;
+		height:60px;
+		width:40%;
+		margin-left:25%;
+		border-radius:30px;
+		border: 1px solid white;
+		font-size: 260%;
+		line-height: middle;
+	}
+	
+	/******************************ÏÂÃæÊÇÄÚÈÝÇøÑùÊ½*********************************/
+	#content .pageheader{
+		width: 19.4%;
+		height: 50px;
+		background:#21B796;
+		color:#FFFFFF;
+		text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		font-weight: bold;
+		float:left;
+		margin-left: 9px;
+	}
+	#content .smallcontent{
+		width: 19.4%;
+		height: 185px;
+		background: #FFFFFF;
+		float:left;
+		margin-left: 9px;
+		margin-top: 13px;
+		border-radius: 10px;
+
+	}
+	#content .smallcontent .smallcontentleft{
+		width: 50%;
+		height: 100%;
+		
+		float:left;
+
+	}
+	#content .smallcontent .smallcontentleft .GoodsName{
+		width: 100%;
+		height: 25%;
+		
+		line-height: 50px;
+		text-align: left;
+	}
+	#content .smallcontent .smallcontentleft .PublishTime{
+		width: 100%;
+		height: 25%;
+	
+		line-height: 50px;
+		text-align: left;
+	}
+	#content .smallcontent .smallcontentleft .Begin{
+		width: 100%;
+		height: 25%;	
+		line-height: 50px;
+		text-align: left;
+	}
+	#content .smallcontent .smallcontentleft .Destination{
+		width: 100%;
+		height: 25%;		
+		line-height: 50px;
+		text-align: left;
+	}
+		#content .smallcontent .smallcontentright{
+		width: 50%;
+		height: 100%;
+		background: yellow;
+		float:left;
+
+		
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightUp{
+		width: 100%;
+		height: 50%;
+		background: white;
+
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightUp .smallcontentrightupbox{
+		float: right;
+		background: #FFCC02;
+		width: 56%;
+		height: 37px;
+		margin-top: 18%;
+		margin-right: 5px;
+		color:#FFFFFF;
+		font-weight: bold;
+		text-align: center;
+		line-height:29px; 
+
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightDown{
+		width: 100%;
+		height: 50%;
+		background: #FFFFFF;
+		
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightDown .smallcontentrightdownbox{
+		float: right;
+		width: 60%;
+		height: 40%;
+		margin-top: 18%;		
+		text-align: right;
+		
+		
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightDown .smallcontentrightdownbox img{
+
+		    max-width:100%;
+		    height: 50px;
+		    float:left;
+
+
+	}
+	
+	/*************************************************************************/
+	#footer{
+		width: 101%;
+			}
+
+/*下面是发布订单modal的样式*/
+#masking{
+	width: 100%;
+	position:absolute;
+    top:0px;
+    left:0px;
+	height: 1000px;
+	background-color:rgba(144,146,147,0.4); 
+	z-index: 99;
+    display: none;
+    
+	}
+
+#masking .show{
+			margin-left:10%;
+			margin-right: 10%;
+			position: absolute;
+			left: 10%;
+			right: 10%;
+			top: 2%;
+			margin-bottom: 10px;
+			background: #FFFFFF;
+			border-radius: 10px;	
+			box-shadow: 3px 5px 3px black;	
+			z-index: 160;
+
+}
+#masking .hidden{
+			/*margin-left:10%;
+			margin-right: 10%;
+			position: absolute;
+			left: 20%;
+			right: 20%;
+			top: 2%;
+			margin-bottom: 10px;
+			background: #FFFFFF;
+			border-radius: 10px;	
+			box-shadow: 3px 5px 3px black;	
+			z-index: 160;*/
+			display: hidden;
+
+}
+
+input::-webkit-input-placeholder {
+color: black !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: black !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: black !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: black !important;  
+}
+
+
+.toptitle{
+	width: 90%;
+	border-bottom: solid 1px black;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2%;
+
+}
+.toptitle h2{
+	display: inline;
+}
+.fapost {
+	float:right;
+	padding: 2px;
+	font-size: medium;
+	line-height: 1.1;
+	background: lightgrey;
+	border: solid 1px white;
+	box-shadow: 1px 2px 1px grey;	
+	margin-top: -2px;
+}
+
+.fapostform{
+	width: 80%;
+	background: lightgrey;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2%;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.form-control{
+	padding:0;
+	padding-left:6px;
+	height:30px;
+}
+.formbottom{
+margin-bottom: 0;
+}
+.formbottom1{
+margin-bottom: 5px;
+}
+.form-group input{
+	background: lightgrey;
+	border:solid 1px gray;
+}
+.form-inline .form-group {
+	width: 49%;
+}
+.form-inline .form-group .form-control{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.form-inline .form-group .formbottom{
+	
+	margin-bottom: 0px;
+}
+
+.staffinfo{
+	display: inline-block;
+	width:49%;
+	
+	vertical-align: top;
+}
+.staffinfo1{
+	display: inline-block;
+	width:49%;
+	
+	vertical-align: top;
+}
+
+
+.staffimg {
+	width: 80%;
+	border-radius: 10px;
+	overflow: hidden;
+	
+	margin-bottom: 20px;
+
+}
+.staffimg img{
+	width: 100%;
+}
+
+.staffimg1{
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	
+	margin-bottom: 0px;
+
+}
+.staffimg1 img{
+	width: 100%;
+}
+
+.fabu{
+	background: #21b796;
+	border:1px solid white;
+	color: white;
+	width: 100%;
+	box-shadow: 1px 2px 1px grey;	
+}
+
+
+.shortinput{
+	width: 80%;
+}
+
+.longinput{
+	width: 95%;
+}
+.fapostformb{
+	margin-bottom: 20px;
+}
+.halfinput{
+width: 49%;
+display: inline-block;
+margin-bottom: 0;
+}
+.form-groupp{
+	margin-bottom: 10px;
+	height: 30px;
+}
+.form-groupp p{
+	margin-top: 5px;
+	font-size: normal;
+}
+.plusimg img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.fapostformwhite{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2%;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+.checkbox1{
+	width: 49%;
+	display: inline-block;
+}
+
+
+.checkbox2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.fabu1{
+	background: #21b796;
+	border:1px solid white;
+	color: white;
+	width: 100%;
+	height: 29px;
+	box-shadow: 1px 2px 1px grey;	
+}
+.fabu3{
+	background: #21b796;
+	border:1px solid white;
+	color: white;
+	width: 80%;
+	height: 29px;
+	box-shadow: 1px 2px 1px grey;	
+	margin-left: 15px;
+}
+
+.fabu2{
+	background: lightgrey;
+	border:1px solid white;
+	color: white;
+	width: 80%;
+	height: 29px;
+	box-shadow: 1px 2px 1px grey;	
+	margin-left: 15px;
+}
+/*以下为待接单模态框*/
+#pendingorder{
+			margin-left:10%;
+			margin-right: 10%;
+			position: absolute;
+			left: 10%;
+			right: 10%;
+			top: 10%;
+			bottom: 10%;
+			background: #FFFFFF;
+			border-radius: 10px;	
+			z-index: 100;	
+			box-shadow: 10px 10px 5px #151A19;
+			}
+	 #pendingorder #top{
+	 	width: 90%;
+	 	height: 16%;
+	 	margin-left:5%;
+	 	margin-right: 5%;
+	border-bottom: 1px solid #000000;
+	
+	}
+	 #pendingorder #top .lefttop{
+		width: 20%;
+		height: 63px;
+		float: left;
+		line-height:63px; 
+
+		 }
+	 #pendingorder #top .righttop{
+		width: 45%;
+		height: 63px;
+		float: right;
+		line-height:63px; 
+		
+		 }	
+	 #pendingorder #top .righttop img{
+	 	width: 55%;
+	 	height: 36px;
+	 	line-height:90px; 
+	 } 
+	 #pendingorder #middle{
+			width: 90%;
+			height: 26%;
+			margin-left:5%;
+			margin-right: 5%;
+			border-bottom: 1px solid #000000;
+
+	}
+	#pendingorder #middle .middletop{
+
+		width: 100%;
+		height: 70%;
+			}
+	#pendingorder #middle .middletop .middletopleft{
+		width: 25%;
+		height: 100%;
+		float: left;
+		margin-left: 10%;
+		margin-top:4px;
+	}
+
+	#pendingorder #middle .middletop .middletopleft span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#pendingorder #middle .middletop .middletopright span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#pendingorder #middle .middletop .middletopleft img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#pendingorder #middle .middletop .middletopmiddle{
+		width: 20%;
+		height: 100%;
+		float: left;
+		
+		
+	}
+	#pendingorder #middle .middletop .middletopright img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#pendingorder #middle .middletop .middletopright{
+		width: 30%;
+		height: 100%;
+		float:right;
+		margin-right: 10%;
+		margin-top:4px;
+	}
+
+	#pendingorder #middle .middlebottom{
+		width: 100%;
+		height: 30%;	
+	}
+	#pendingorder #middle .middlebottom .middlebottomleft{
+		width: 25%;
+		height: 100%;
+	
+		float: left;
+		margin-left: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#pendingorder #middle .middlebottom .middlebottomright{
+		width: 30%;
+		height: 100%;
+
+		float:right;
+		margin-right: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#pendingorder #footer{
+	width: 90%;		
+	height: 58%;			
+	margin-left:5%;
+	margin-right: 5%;
+	
+	}
+
+	#pendingorder #footer .footerleft{
+		width: 60%;
+		height: 100%;
+		float: left;
+	
+	}
+	#pendingorder #footer .footerleft .footerleftupleft{
+		width: 50%;
+		height: 58%;
+		float: left;
+		}
+	#pendingorder #footer .footerleft .footerleftupright{
+		width: 50%;
+		height: 58%;
+		float: right;
+		/*background: #FFCC02;*/
+	}
+	#pendingorder #footer .footerleft .footerleftupright .footerleftuprightinside{
+		width: 60%;
+		height: 58px;
+		margin-top: 20px;
+		margin-right:20%;
+		float:right;
+		background: #FFCC02;
+		text-align: center;
+		line-height: 58px;
+		color:#FFFFFF;
+		font-weight: bold;
+	}
+	#pendingorder #footer .footerleft .footerleftmiddle{
+		width: 100%;
+		height: 20%;
+		float: left;
+		
+	}
+	#pendingorder #footer .footerleft .footerleftbottom{
+
+		width: 100%;
+		height: 22%;
+		float: left;
+		}
+		#pendingorder #footer .footerleft .footerleftbottom .cancel{
+		margin-left:10%;
+		width: 221px;
+		background:#949599;
+		color: #FFFFFF;
+		margin-top:3px;
+	}
+	#pendingorder #footer .footerleft .footerleftbottom .editor{
+		margin-left:10%;
+		width: 221px;
+		background:#21B796;
+		color: #FFFFFF;
+		margin-top:3px;
+	}
+	#pendingorder #footer .footerright{
+		width: 40%;
+		height: 100%;
+		float: right;
+	
+		}
+	#pendingorder #footer .footerright img{
+		width: 70%;
+		height: 70%;
+		border-radius: 30px;
+		margin-left: 30%;
+		margin-top: 10%;
+	}
+
