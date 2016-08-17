@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ------------Author:Henry 2016/7/26---------------------- -->
+<!-- ------------Design:Frank; Coding:Henry.---------------------- -->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -41,12 +41,33 @@
                </span></div><!--searchbuttonwrap-->
             </div><!-- /inputsearch -->
  </div>
+ <!--下面五个为菜单，刚打开页面时是纵向显示相关记录，为了美观每个菜单最多显示两行不能多了。页面打开后任意点击某个菜单，下面内容就变为相应内容，如点击“运送中”，下面就全显示“运送中”的内容，记录过多带分页。-->
+ <!-- 
+待接单有两种情况：待接单，议价中
+待付款有一种情况：待付款
+运送中有两种情况：已取货，未取货
+已完成有两种情况：已完成，待评价
+已取消有一种情况：已取消
+所有情况都通过，../img/fa文件夹下的相应图片显示出来
+  -->
  	<div class="pageheader"><a href="">待接单</a></div>
  	<div class="pageheader"><a href="">待付款</a></div>
  	<div class="pageheader"><a href="">运送中</a></div>
  	<div class="pageheader"> <a href="">已完成</a></div>
  	<div class="pageheader"><a href="">已取消</a></div>
  	<!-- smallcontent -->
+  <!-- 
+八大状态类的定义
+待接单：djd
+议价中：yjz
+待付款：dfk
+已取货：yqh
+未取货：wqh
+已完成：ywc
+待评价：dpj
+已取消：yqx
+描述：页面中显示的各个smallcontent,可以单击进去看详细信息，盒子内容状态用上面定义的类名定位。也就是说这些类名要在页面显示时动态加在smallcontent标签里。当然也可以考虑用input hidden
+   -->
  	<div class="smallcontent">
  	<div class="smallcontentleft">
  		
@@ -72,36 +93,7 @@
  			</div>
  			<div class="smallcontentrightDown">
  			<div class="smallcontentrightdownbox">
- 			<img src="../img/fa/待接单.png" alt="待接单">//如果有单子，这个图片变为议价中。
- 			</div>
- 			</div>
- 		</div><!--smallcontentright-->
- 	</div><!--smallcontent-->
- 	<div class="smallcontent">
- 	<div class="smallcontentleft">
- 		
- 		<!-- 
- 		GoodsName:物品名称
- 		PublishTime:发布时间
- 		Begin：发货地址
- 		Destination：目的地
-		右边黄标签数字是报酬
-		右边下面是状态有五种不同图片
- 		 -->
- 			<div class="GoodsName"><b>BlueBerry</b></div>
- 			<div class="PublishTime">2016-8-9</div>
- 			<div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
- 			</div>
- 			<div class="Destination">
-			<span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">上海</span>
- 			</div>
- 		</div><!--smallcontent-->
- 		<div class="smallcontentright">
- 			<div class="smallcontentrightUp">
- 			<div class="smallcontentrightupbox">$60</div>
- 			</div>
- 			<div class="smallcontentrightDown">
- 			<div class="smallcontentrightdownbox">
+      <!-- 如果有单子，这个图片变为议价中 -->
  			<img src="../img/fa/待接单.png" alt="待接单">
  			</div>
  			</div>
@@ -132,7 +124,7 @@
  			</div>
  			<div class="smallcontentrightDown">
  			<div class="smallcontentrightdownbox">
- 			<img src="../img/fa/待接单.png" alt="待接单">
+ 			<img src="../img/fa/待付款.png" alt="待接单">
  			</div>
  			</div>
  		</div><!--smallcontentright-->
@@ -162,7 +154,7 @@
  			</div>
  			<div class="smallcontentrightDown">
  			<div class="smallcontentrightdownbox">
- 			<img src="../img/fa/待接单.png" alt="待接单">
+ 			<img src="../img/fa/已取货.png" alt="待接单">
  			</div>
  			</div>
  		</div><!--smallcontentright-->
@@ -192,12 +184,191 @@
  			</div>
  			<div class="smallcontentrightDown">
  			<div class="smallcontentrightdownbox">
- 			<img src="../img/fa/待接单.png" alt="待接单">
+ 			<img src="../img/fa/已完成.png" alt="待接单">
  			</div>
  			</div>
  		</div><!--smallcontentright-->
  	</div><!--smallcontent-->
- 	
+ 	<div class="smallcontent">
+ 	<div class="smallcontentleft">
+ 		
+ 		<!-- 
+ 		GoodsName:物品名称
+ 		PublishTime:发布时间
+ 		Begin：发货地址
+ 		Destination：目的地
+		右边黄标签数字是报酬
+		右边下面是状态有五种不同图片
+ 		 -->
+ 			<div class="GoodsName"><b>BlueBerry</b></div>
+ 			<div class="PublishTime">2016-8-9</div>
+ 			<div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+ 			</div>
+ 			<div class="Destination">
+			<span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">上海</span>
+ 			</div>
+ 		</div><!--smallcontent-->
+ 		<div class="smallcontentright">
+ 			<div class="smallcontentrightUp">
+ 			<div class="smallcontentrightupbox">$60</div>
+ 			</div>
+ 			<div class="smallcontentrightDown">
+ 			<div class="smallcontentrightdownbox">
+ 			<img src="../img/fa/已取消.png" alt="待接单">
+ 			</div>
+ 			</div>
+ 		</div><!--smallcontentright-->
+ 	</div><!--smallcontent-->
+ 	<div class="smallcontent">
+  <div class="smallcontentleft">
+    
+    <!-- 
+    GoodsName:物品名称
+    PublishTime:发布时间
+    Begin：发货地址
+    Destination：目的地
+    右边黄标签数字是报酬
+    右边下面是状态有五种不同图片
+     -->
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">上海</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <img src="../img/fa/议价中.png" alt="待接单">
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+  <div class="smallcontent">
+  <div class="smallcontentleft">
+    
+    <!-- 
+    GoodsName:物品名称
+    PublishTime:发布时间
+    Begin：发货地址
+    Destination：目的地
+    右边黄标签数字是报酬
+    右边下面是状态有五种不同图片
+     -->
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">上海</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <img src="../img/fa/待付款.png" alt="待接单">
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+  <div class="smallcontent">
+  <div class="smallcontentleft">
+    
+    <!-- 
+    GoodsName:物品名称
+    PublishTime:发布时间
+    Begin：发货地址
+    Destination：目的地
+    右边黄标签数字是报酬
+    右边下面是状态有五种不同图片
+     -->
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">上海</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <img src="../img/fa/未取货.png" alt="待接单">
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+  <div class="smallcontent">
+  <div class="smallcontentleft">
+    
+    <!-- 
+    GoodsName:物品名称
+    PublishTime:发布时间
+    Begin：发货地址
+    Destination：目的地
+    右边黄标签数字是报酬
+    右边下面是状态有五种不同图片
+     -->
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">上海</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <img src="../img/fa/待评价.png" alt="待接单">
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+  <div class="smallcontent">
+  <div class="smallcontentleft">
+    
+    <!-- 
+    GoodsName:物品名称
+    PublishTime:发布时间
+    Begin：发货地址
+    Destination：目的地
+    右边黄标签数字是报酬
+    右边下面是状态有五种不同图片
+     -->
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">上海</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <img src="../img/fa/已取消.png" alt="待接单">
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
 	
  </div><!--content-->
  <div id="footer">
@@ -205,6 +376,7 @@
  </div>
  
  <!-- 下面全是各种模态框 -->
+
  <!-- 创建新订单模态框 -->
  <div id="masking">
  <div id="neworder" class="show">
@@ -455,7 +627,7 @@
 	</div><!--pendingorder-->
 	
   <!-- 议价中 -->
-<div id="yijiazhong">
+  <div class="yijiazhong">
     <div id="top">
       <div class="lefttop"><span>物品名称：蓝莓</span></div>
       <div class="righttop"><span>订单号：1111111111111 <img alt="待接单" src="../img/fa/议价中.png"></span></div><!--righttop-->
@@ -479,29 +651,29 @@
         </div><!--middlebottomright-->
       </div><!--middlebottom-->
     </div><!--middle-->
-    <div id="footer">
-      <div class="footerleft">
-        <div class="footerleftupleft">
+    <div class="di">
+      <div class="dileft">
+        <div class="dileftupleft">
           <p>物品重量：50kg</p>
           <p>物品价格：$200</p>
         </div>
-        <div class="footerleftupright">
-          <div class="footerleftuprightinside">
+        <div class="dileftupright">
+          <div class="dileftuprightinside">
             报酬：￥60
           </div>
         </div>
-        <div class="footerleftmiddle">
+        <div class="dileftmiddle">
           物品描述：保持外包装完好，谢谢。
         </div>
-        <div class="footerleftbottom">
+        <div class="dileftbottom">
           <button class="btn btn-default btn-lg cancel" >取消</button>
           <button class="btn btn-default btn-lg editor" >查看议价</button>
         </div>
-      </div><!--footerleft-->
-      <div class="footerright">
+      </div><!--dileft-->
+      <div class="diright">
         <img src="../img/fa/blueberry.jpg" alt="">
-      </div><!--footerright-->
-    </div><!--footer-->
+      </div><!--diright-->
+    </div><!--di-->
   </div><!--yijiazhong-->
 </div><!--masking-->
 
