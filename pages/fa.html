@@ -4,11 +4,425 @@
 <head>
 <meta charset="UTF-8">
 <title>发</title>
-<!-- bootstrap -->
-
+<!-- ÏÂÃæÎªbootstrap -->
 <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="../css/content/fa.css">
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<!-- ÏÂÃæÎªÈÕÀú¿Ø¼þ -->
+<link rel ="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+			<script src ="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+				<script>
+				
+  </script>
 </head>
+<style>
+	#header{
+		width: 100%;
+		height: 90px;
+		}
+	/************************************ÉÏÃæÊÇÍ·²¿ÐÅÏ¢************************************************************/
+	#content{
+		display: inline-block;
+		width: 100%;
+		background: #BFEAE1;
+		margin:1px auto;
+
+		
+		}
+	/*******************ÉÏÃæÊÇÄÚÈÝÇø¶¨Òå********************************************/
+	#content .search{		
+		height: 400px;		
+		background-image: url(../img/fa/fa.png);	//±³¾°Í¼	
+		-moz-background-size:100% 400px;
+		-webkit-background-size:100% 400px;
+		-o-background-size:100% 400px;
+		background-size:100% 400px;
+     	background-position: left bottom;	 	
+			
+	}
+	#content .search .leftlink{
+		float:left;
+		margin-top: 0px;
+		padding-top:10px;
+		width: 5%;
+		height: 380px;
+		}
+	#content .search .leftlink .leftlinkmenu{
+
+		width: 60px;
+		height: 60px;
+		border-radius:50%;		
+		margin:auto;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 60px;
+		background:#FFFFFF;
+		opacity: 0.5;
+		
+		font-weight: bold;
+	}
+	#content .search .leftlink .leftlinkmenu a:link{
+		color: #BFEAE1;
+	}
+	#content .search .leftlink #menuwhite a:hover{
+		color: #64B7A1;
+	}
+	#content .search .leftlink #menuwhite{
+	width: 60px;
+		height: 60px;																						
+		border-radius:50%;
+		margin:auto;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 60px;
+		background:#FFFFFF;
+		opacity: 1;
+		
+		font-weight: bold;
+
+	}
+	
+/****************ÉÏÃæÊÇsearchÀïÃæ×ó±ßµÄÁù¸öÔ²µÄÑùÊ½**************************************/
+	
+
+	#content .search .inputsearch{
+		float: right;
+		margin-top: 0px;
+		width:95%;
+		height: 400px;
+		/*border: 1px solid yellow;*/
+		float:right;
+		
+	}
+	#content .search .inputsearch .pageintroduce{
+
+		float:left;
+		width: 95%;
+		height: 120px;
+		color: #FFFFFF;
+		font-size: 600%;
+		font-weight:bold;
+		line-height: 120px;
+		padding-left: 8%;
+		}
+	#content .search .inputsearch .searchbuttonwrap{
+
+	float:left;
+		width: 95%;
+		height: 280px;
+		padding-top:180px;
+		
+	}
+	#content .search .inputsearch .searchbuttonwrap input{
+
+		float:right;
+		height: 30px;
+		width: 16%;
+		border-radius:12px;
+		border:0px;
+		text-align: center;
+		
+		 background:url(../img/fa/magnifier.png) no-repeat right center;
+		 background-size: 10% auto;
+background-color: #FFFFFF;
+
+	}
+
+	#content .search .inputsearch #searchbutton{
+		background: #21B796;
+		color:white;
+		height:60px;
+		width:40%;
+		margin-left:25%;
+		border-radius:30px;
+		border: 1px solid white;
+		font-size: 260%;
+		line-height: middle;
+	}
+	
+	/******************************ÏÂÃæÊÇÄÚÈÝÇøÑùÊ½*********************************/
+	#content .pageheader{
+		width: 19.4%;
+		height: 50px;
+		background:#21B796;
+		color:#FFFFFF;
+		text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		font-weight: bold;
+		float:left;
+		margin-left: 9px;
+	}
+	#content .smallcontent{
+		width: 19.4%;
+		height: 185px;
+		background: #FFFFFF;
+		float:left;
+		margin-left: 9px;
+		margin-top: 13px;
+		border-radius: 10px;
+
+	}
+	#content .smallcontent .smallcontentleft{
+		width: 50%;
+		height: 100%;
+		
+		float:left;
+
+	}
+	#content .smallcontent .smallcontentleft .GoodsName{
+		width: 100%;
+		height: 25%;
+		
+		line-height: 50px;
+		text-align: left;
+	}
+	#content .smallcontent .smallcontentleft .PublishTime{
+		width: 100%;
+		height: 25%;
+	
+		line-height: 50px;
+		text-align: left;
+	}
+	#content .smallcontent .smallcontentleft .Begin{
+		width: 100%;
+		height: 25%;	
+		line-height: 50px;
+		text-align: left;
+	}
+	#content .smallcontent .smallcontentleft .Destination{
+		width: 100%;
+		height: 25%;		
+		line-height: 50px;
+		text-align: left;
+	}
+		#content .smallcontent .smallcontentright{
+		width: 50%;
+		height: 100%;
+		background: yellow;
+		float:left;
+
+		
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightUp{
+		width: 100%;
+		height: 50%;
+		background: white;
+
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightUp .smallcontentrightupbox{
+		float: right;
+		background: #FFCC02;
+		width: 56%;
+		height: 37px;
+		margin-top: 18%;
+		margin-right: 5px;
+		color:#FFFFFF;
+		font-weight: bold;
+		text-align: center;
+		line-height:29px; 
+
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightDown{
+		width: 100%;
+		height: 50%;
+		background: #FFFFFF;
+		
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightDown .smallcontentrightdownbox{
+		float: right;
+		width: 60%;
+		height: 40%;
+		margin-top: 18%;		
+		text-align: right;
+		
+		
+	}
+	#content .smallcontent .smallcontentright .smallcontentrightDown .smallcontentrightdownbox img{
+
+		    max-width:100%;
+		    height: 50px;
+		    float:left;
+
+
+	}
+	
+	/*************************************************************************/
+	#footer{
+		width: 101%;
+			}
+		
+	
+/*************************************ÏÂÃæÊÇÄ£Ê½ÏêÏ¸ÄÚÈÝ****************************/
+.modal .modal-dialog .modal-content .modal-body .detailspecification{
+	width: 100%;
+	height: 90px;
+	/*border:1px solid #B3B4B6;*/
+	margin-bottom: 20px;
+
+
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftcontentwrap{
+
+	width: 22%;	
+	float: left;
+
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftcontentwrap .leftmodalup{
+
+	width: 100%;
+	height: 40px;
+	
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftcontentwrap .leftmodaldown{
+
+	width: 100%;
+	height: 40px;
+	
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightcontentwrap{
+
+	width: 22%;
+	height: 90px;
+	float: right;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .modalmiddle {
+	width: 23.6%;
+	height: 80px;
+	float: left;
+	}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .modalmiddle img{
+	width: 100%;
+	height: 78px;
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightcontentwrap .rightmodalup{
+
+	width: 100%;
+	height: 40px;
+	
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightcontentwrap .rightmodaldown{
+
+	width: 100%;
+	height: 40px;
+	
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftimage{
+	width: 15%;
+	float:left;
+
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftimage img{
+	width: 90%;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightimage img{
+	width: 90%;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightimage{
+	width: 15%;
+	
+	
+	float:right;
+
+}
+	
+
+
+
+.modal .modal-dialog .modal-content .modal-body textarea{
+	border-radius:5px;
+	border:1px solid #B3B4B6;
+	padding-left: 3%;
+	padding-top: 5px;
+	
+	}
+
+	/**************ÏÂÃæÊÇhelpÄ£Ì¬µÄÑùÊ½*****************/
+	.modal .modal-dialog .modal-content .modal-header .helpleft{
+		width: 35%;
+		height: 100px;		
+		display: inline-block;
+		text-align: center;
+		padding-top: 3%;
+
+	}
+	.modal .modal-dialog .modal-content .modal-header .helpright{
+		width: 30%;
+		height: 100px;
+		padding-left:6%;
+		padding-top:5%;
+		float: right;		
+	}
+	.modal .modal-dialog .modal-content .modal-body .helpcenter{
+
+		width: 100%;
+		
+		
+	}
+	.modal .modal-dialog .modal-content .modal-body .helpcenter .helpcenterbox{
+	width: 30%;
+	height: 170px;
+	display: inline-block;
+	margin:1%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
+	-webkit-box-shadow: 3px 3px 3px;  
+  -moz-box-shadow: 3px 3px 3px;  
+  box-shadow: 3px 3px 3px;  
+	position:relative;
+	}
+	.modal .modal-dialog .modal-content .modal-body .helpcenter .helpcenterbox .helpcenterboxleft{
+		width: 50%;
+		/*height: 98px;*/
+		border-right: 1px dashed #E5E5E5;
+				
+		position: absolute;
+	top:0px;
+	left:0px;
+
+	}
+
+	.modal .modal-dialog .modal-content .modal-body .helpcenter .helpcenterbox .helpcenterboxright{
+		width: 38%;
+		height: 98px;
+				
+		position: absolute;
+		top:0px;
+		left:61%;
+	}
+
+#masking{
+	  background-color:#003366;
+    z-index: 99;
+    height: 2739px;
+    width: 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity: 0.5;
+    display: none;
+}
+</style>
 <body >
  <div id="header">
  <object style="border:0px" type="text/x-scriptlet" data="header.html" width=100%></object>
@@ -32,7 +446,7 @@
 			<div class="pageintroduce">发；需求</div>
               <div class="searchbuttonwrap">
                <span class="input-group-btn title">
-                  <button class="btn btn-default " type="button" id="searchbutton">
+                  <button class="btn btn-default" type="button" id="searchbutton" data-toggle="modal" data-target="#myModal">
                      创建新订单
                   </button>
                   <input type="text" placeholder="输入订单号">
@@ -203,261 +617,381 @@
  <div id="footer">
  <object data="footer.html" type="text" width="100%" height="100%"></object>
  </div>
- 
- <!-- 下面全是各种模态框 -->
- <!-- 创建新订单模态框 -->
- <div id="masking">
- <div id="neworder" class="show">
-		<div class="toptitle">
-		<h2>发布新订单</h2>
-		 <button type="submit" class="btn btn-default fapost" id="buttonforneworders">批量发布订单</button>
-		</div>
+ <!-- Çë°ïÖúÄ£Ì¬¿ò -->
+ <div class="modal fade " id="help" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true" >
+   <div class="modal-dialog">
+      <div class="modal-content" >
+         <div class="modal-header" >
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <div class="helpleft">
+        <h4>·¢²¼Ê±¼ä£º2016-7-1</h4>
+        <h5><b>Henry</b></h5>
+           </div>
+           <div class="helpright">
+            <button class="btn btn-info btn-lg">ÐÂ½¨¶©µ¥</button>
+          </div>
+         </div>
+         <div class="modal-body">
+         <div class="helpcenter">
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">ÎïÆ·Ãû³Æ£º</b><br>
+         			<span>Æ»¹ûÊÖ»ú</span><br>
+         			<b style="color:red">·¢²¼Ê±¼ä£º</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">³ö·¢£º</b><br>
+         			<span>ÈÕ±¾Ãû¹ÅÎÝ</span><br>
+         			<b style="color:red">µÖ´ï:</b> <br>
+         			<span>ÖÐ¹ú¸£½¨</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">ÊýÁ¿:</b><br>
+         			<span>2¸ö</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">±¨³ê£º<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">×´Ì¬£º<br>´ý½Óµ¥</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">ÎïÆ·Ãû³Æ£º</b><br>
+         			<span>Æ»¹ûÊÖ»ú</span><br>
+         			<b style="color:red">·¢²¼Ê±¼ä£º</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">³ö·¢£º</b><br>
+         			<span>ÈÕ±¾Ãû¹ÅÎÝ</span><br>
+         			<b style="color:red">µÖ´ï:</b> <br>
+         			<span>ÖÐ¹ú¸£½¨</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">ÊýÁ¿:</b><br>
+         			<span>2¸ö</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">±¨³ê£º<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">×´Ì¬£º<br>´ý½Óµ¥</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">ÎïÆ·Ãû³Æ£º</b><br>
+         			<span>Æ»¹ûÊÖ»ú</span><br>
+         			<b style="color:red">·¢²¼Ê±¼ä£º</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">³ö·¢£º</b><br>
+         			<span>ÈÕ±¾Ãû¹ÅÎÝ</span><br>
+         			<b style="color:red">µÖ´ï:</b> <br>
+         			<span>ÖÐ¹ú¸£½¨</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">ÊýÁ¿:</b><br>
+         			<span>2¸ö</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">±¨³ê£º<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">×´Ì¬£º<br>´ý½Óµ¥</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">ÎïÆ·Ãû³Æ£º</b><br>
+         			<span>Æ»¹ûÊÖ»ú</span><br>
+         			<b style="color:red">·¢²¼Ê±¼ä£º</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">³ö·¢£º</b><br>
+         			<span>ÈÕ±¾Ãû¹ÅÎÝ</span><br>
+         			<b style="color:red">µÖ´ï:</b> <br>
+         			<span>ÖÐ¹ú¸£½¨</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">ÊýÁ¿:</b><br>
+         			<span>2¸ö</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">±¨³ê£º<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">×´Ì¬£º<br>´ý½Óµ¥</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">ÎïÆ·Ãû³Æ£º</b><br>
+         			<span>Æ»¹ûÊÖ»ú</span><br>
+         			<b style="color:red">·¢²¼Ê±¼ä£º</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">³ö·¢£º</b><br>
+         			<span>ÈÕ±¾Ãû¹ÅÎÝ</span><br>
+         			<b style="color:red">µÖ´ï:</b> <br>
+         			<span>ÖÐ¹ú¸£½¨</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">ÊýÁ¿:</b><br>
+         			<span>2¸ö</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">±¨³ê£º<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">×´Ì¬£º<br>´ý½Óµ¥</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">ÎïÆ·Ãû³Æ£º</b><br>
+         			<span>Æ»¹ûÊÖ»ú</span><br>
+         			<b style="color:red">·¢²¼Ê±¼ä£º</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">³ö·¢£º</b><br>
+         			<span>ÈÕ±¾Ãû¹ÅÎÝ</span><br>
+         			<b style="color:red">µÖ´ï:</b> <br>
+         			<span>ÖÐ¹ú¸£½¨</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">ÊýÁ¿:</b><br>
+         			<span>2¸ö</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">±¨³ê£º<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">×´Ì¬£º<br>´ý½Óµ¥</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">ÎïÆ·Ãû³Æ£º</b><br>
+         			<span>Æ»¹ûÊÖ»ú</span><br>
+         			<b style="color:red">·¢²¼Ê±¼ä£º</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">³ö·¢£º</b><br>
+         			<span>ÈÕ±¾Ãû¹ÅÎÝ</span><br>
+         			<b style="color:red">µÖ´ï:</b> <br>
+         			<span>ÖÐ¹ú¸£½¨</span>
+         		</div>
 
-		<form class="fapostform">
-   <div class="form-group">
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="取货时间">
-  </div>
-  <div class="form-group formbottom">
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="取货地点">
-  </div>
-</form>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">ÊýÁ¿:</b><br>
+         			<span>2¸ö</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">±¨³ê£º<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">×´Ì¬£º<br>´ý½Óµ¥</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
 
-<form class="fapostform">
-   <div class="form-group">
-    <input type="text" class="form-control" placeholder="收货时间">
-  </div>
-  <div class="form-group formbottom">
-    <input type="" class="form-control" placeholder="收货地址">
-  </div>
-</form>
-
-<form class="form-inline fapostform">
- 
-  <div class="form-group">
-    <input type="text" class="form-control "  placeholder="发货人">
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="电话">
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control formbottom" placeholder="收货人">
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control formbottom" placeholder="电话">
-  </div>
-  
-</form>
-
-<div class="fapostform fapostformb biaoji">
- <form class="staffinfo">
-   <div class="form-group">
-    <input type="text" class="form-control shortinput" placeholder="物品名称">
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control shortinput"  placeholder="物品重量">
-  </div>
-   <div class="form-group">
-    <input type="text" class="form-control" placeholder="物品描述">
-  </div>
-
-  <a href="#"><p>图片添加</p></a>
-  
-  <br>
-    <p>请依据实际距离参考报酬:$50.00</p>
-  <br>
- 
-
-</form>
-  <form class="staffinfo1">
-   <div class="form-group formbottom1">
-    <input type="text" class="form-control shortinput" placeholder="物品价值">
-  </div>
-  <div class="staffimg">
-  <img  src="../img/发蒙板/img.png" alt="上传图片">
-  </div>
- <div class="form-group ">
-    <input type="" class="form-control shortinput" placeholder="报酬">
-  </div>
-</form>
-<div class="checkbox2">
-    <label>
-      <input type="checkbox"> 我已仔细阅读使用协议
-    </label>
-  </div>
-  
-<div class="checkbox1">
-      <button type="submit" class="btn btn-default fabu2 checkbox1 ordercancel">取消</button>
-  </div>
-  <div class="checkbox1">
-<button type="button" class="btn btn-success fabu3 checkbox1 orderpublish">推送并发布</button>
+         </div>
+         
+        </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">¹Ø±Õ
+            </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#help" data-dismiss="modal">
+               È·ÈÏ
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modaldalog -->
 </div>
-</div>	
-</div><!--neworder-->
-<!-- 批量发布,neworders -->
-<div id="neworders">
-		<div class="toptitle">
-		<h2>批量发布订单</h2>
-		 
-		</div>
+<!-- Ä£Ì¬¿ò£¨Modal£© -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel" style="text-align:center">
+              ÐÂ½¨ÐÐ³Ì
+            </h4>
+         </div>
+         <div class="modal-body">
+           
+           
+            
+            <form action="" role="form">
+            	<div class="form-group"> 
+            	<label for="qi">Æðµã</label>
+            	<input type="text" placeholder="Æðµã" class="form-control" id="qi" >
+            	</div>
+            	<div class="form-group">
+				<label for="zhong">ÖÕµã</label>
+            	<input type="text" placeholder="ÖÕµã" class="form-control" id="zhong">
+            	</div>
+            	<div class="form-group">
+            	<label for="starttime">¿ªÊ¼Ê±¼ä</label>
+            	<input type="text" id="start" placeholder="¿ªÊ¼Ê±¼ä" class="form-control"></p>
+            	
+            	</div>
+            	<div class="form-group">
+            	<label for="endtime">½áÊøÊ±¼ä</label>
+            	<input type="text" id="end" placeholder="½áÊøÊ±¼ä" class="form-control"></p>
+            	
+            	</div>
 
-		<form class="fapostform">
-   <div class="form-group">
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="取货时间">
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="取货地点">
-  </div>
-  
-  <div class="form-group halfinput">
-    <input type="text" class="form-control formbottom" placeholder="发货人">
-  </div>
-  <div class="form-group  halfinput">
-    <input type="text" class="form-control formbottom" placeholder="电话">
-  </div>
+            	<div class="form-group">
+					<label for="transportation">½»Í¨¹¤¾ß</label>
+            		<select name="" id="transportation" class="form-control">
+            		<option value="">²½ÐÐ</option>
+            		<option value="">½Î³µ</option>
+            		<option value="">´ó»õ³µ</option>
+            		<option value="">Ð¡»õ³µ</option>
+            		<option value="">·É»ú</option>
+            	</select></div>
+            	<div class="form-group">
+            	<label for="remark">½»Í¨¹¤¾ß</label>
+            	<textarea name="" id="remark" cols="30" rows="10" class="form-control"></textarea>
+            	</div>
 
-</form>
+            </form>
 
-<div class="fapostform fapostformb">
- <form class="staffinfo">
-   <div class="form-group">
-    <input type="text" class="form-control shortinput" placeholder="物品名称">
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control shortinput"  placeholder="物品重量">
-  </div>
-   <div class="form-group">
-    <input type="text" class="form-control longinput" placeholder="物品描述">
-  </div>
-    <br>
-  <br>
+            	
 
-  <a href="#"><p>图片添加</p></a>
+         
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">¹Ø±Õ
+            </button>
+            <button type="button" class="btn btn-primary">
+               Ìá½»¸ü¸Ä
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!--modal-->
+	</div><!--leftcontent-->
+ <!-- ÏêÏ¸ÐÅÏ¢Ä£Ì¬¿ò£¨Modal£© -->
+<div class="modal fade" id="detailinformation" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+             ·¢²¼Ê±¼ä£º2016-6-8
+            </h4><br>
+            <b>Henry</b>
+         </div>
+         <div class="modal-body">
+         <div class="detailspecification">
 
-</form>
-  <form class="staffinfo">
-   <div class="form-group">
-    <input type="text" class="form-control" placeholder="物品价值">
-  </div>
-  <div class="staffimg1">
-  <img  src="../img/发蒙板/img.png" alt="上传图片" >
-  </div>
-  
+        <div class="leftimage">
+        	<img src="../img/xing/qi.png">
+        </div>
+        <div class="leftcontentwrap">
+        	<div class="leftmodalup">ÖÐ¹ú±±¾©</div>
+        	<div class="leftmodaldown">2016-7-26</div>
+        </div>
+			<div class="modalmiddle"><img src="../img/xing/xingplane.gif" alt=""></div>	
+        
+         <div class="rightcontentwrap">
+         	<div class="rightmodalup">¼ÓÄÃ´óÎÂ¸ç»ª</div>
+        	<div class="rightmodaldown">2016-8-5</div>
+         </div>	
+         <div class="rightimage"><img src="../img/xing/zhong.png"> </div>
+         </div>
+        
+            
+           
+            	<textarea name="remark" id="" cols="82" rows="10" placeholder="±¸×¢"></textarea>
+           
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">¹Ø±Õ
+            </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#help" data-dismiss="modal">
+               Çë°ïÃ¦
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+<div id="masking"></div>
+</div>
  
- 
-</form>
-  
-</div>
-
-<div class="fapostform fapostformb kelongbox biaoji">
-
- <form class="staffinfo">
-  <div class="form-groupp ">
-	
-      <p>请依据实际距离参考报酬:$50.00</p>
-      <!--报酬是根据取货地点和收获地点计算出来的，因为收获地点可能是多个所以这个值是变化的-->
-
-  </div>
-  
-  <div class="form-group">
-    <input type="text" class="form-control longinput "  placeholder="收货人">
-  </div>
-   <div class="form-group">
-    <input type="text" class="form-control longinput" placeholder="收货时间">
-  </div>
-
-</form>
-
-  <form class="staffinfo">
-   <div class="form-group">
-    <input type="text" class="form-control longinput" placeholder="报酬">
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control longinput "  placeholder="电话">
-  </div>
-  
-</form>
-
-<form class="fapostform1">
-   <div class="form-group">
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="收货地址">
-
-  </div>
-  
-</form>
-</div><!--kelongbox-->
-<form class="fapostformwhite">
-  <div class="plusimg">
-   <img  src="../img/发蒙板/大加号.png" alt="上传图片" onclick="kelong()">
-</div>
-<div class="checkbox2">
-    <label>
-      <input type="checkbox"> 我已仔细阅读使用协议
-    </label>
-  </div>
-  
-<div class="checkbox1">
-      <button type="submit" class="btn btn-default fabu2 checkbox1 ordercancel">取消</button>
-  </div>
-  <div class="checkbox1">
-<button type="button" class="btn btn-success fabu3 checkbox1 orderpublish">推送并发布</button>
-
-</div>
-</form>
-</div><!--neworders-->
-<!-- 以下为待接单 -->
-<div id="pendingorder">
-		<div id="top">
-			<div class="lefttop"><span>物品名称：蓝莓</span></div>
-			<div class="righttop"><span>订单号：1111111111111 <img alt="待接单" src="../img/fa/待接单.png"></span></div><!--righttop-->
-		</div><!--top-->
-		<div id="middle">
-			<div class="middletop">
-				<div class="middletopleft">
-					<img src="../img/fa/qi.png" alt=""><span>日本大阪</span>
-				</div><!--middletopleft-->
-				<div class="middletopmiddle"><br><p>.............................................</p></div><!--middletopmiddle-->
-				<div class="middletopright">
-					<img src="../img/fa/zhong.png" alt=""><span>加拿大温哥华</span>
-				</div><!--middletopright-->
-			</div><!--middletop-->
-			<div class="middlebottom">
-				<div class="middlebottomleft">
-					<span>取货时间：2016-8-8 12:20</span>
-				</div><!--middlebottomleft-->
-				<div class="middlebottomright">
-					<span>送达时间：2016-8-8 6:30</span>
-				</div><!--middlebottomright-->
-			</div><!--middlebottom-->
-		</div><!--middle-->
-		<div id="footer">
-			<div class="footerleft">
-				<div class="footerleftupleft">
-					<p>物品重量：50kg</p>
-					<p>物品价格：$200</p>
-				</div>
-				<div class="footerleftupright">
-					<div class="footerleftuprightinside">
-						报酬：￥60
-					</div>
-				</div>
-				<div class="footerleftmiddle">
-					物品描述：保持外包装完好，谢谢。
-				</div>
-				<div class="footerleftbottom">
-					<button class="btn btn-default btn-lg cancel">取消</button>
-					<button class="btn btn-default btn-lg editor">修改编辑</button>
-				</div>
-			</div><!--footerleft-->
-			<div class="footerright">
-				<img src="../img/fa/blueberry.jpg" alt="">
-			</div><!--footerright-->
-		</div><!--footer-->
-	</div><!--pendingorder-->
-	<!-- 以下为另一个模块 -->
-</div><!--masking-->
 </body>
 
 <script src="../js/iframe/jquery.js"></script>
-<script src="../js/content/fa.js"></script>
+<script>
 
+
+$(".Menu-title ul li:contains('Í¬³Ç');").hover(function() {
+	$(".Menu-title ul li:contains('Í¬³Ç');").css('color', '#21B796');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$(".Menu-title ul li:contains('Í¬³Ç');").css('color', '#FFFFFF');
+	/* Stuff to do when the mouse leaves the element */
+});
+
+$(".Menu-title ul li:contains('³Ç¼Ê');").hover(function() {
+	$(".Menu-title ul li:contains('³Ç¼Ê');").css('color', '#21B796');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$(".Menu-title ul li:contains('³Ç¼Ê');").css('color', '#FFFFFF');
+	/* Stuff to do when the mouse leaves the element */
+});
+
+$(".Menu-title ul li:contains('¹ú¼Ê');").hover(function() {
+	$(".Menu-title ul li:contains('¹ú¼Ê');").css('color', '#21B796');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$(".Menu-title ul li:contains('¹ú¼Ê');").css('color', '#FFFFFF');
+	/* Stuff to do when the mouse leaves the element */
+});
+// ÏÂÃæÊÇ×óÉÏ½Ç·¢ËÍÊÕÐÐ¹º±³¾°
+$('.leftlinkmenu:eq(3)').hover(function() {
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(3)').css('opacity', '1');
+	$('.leftlinkmenu:eq(0)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(3)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(0)').css('opacity', '1');
+});
+
+$('.leftlinkmenu:eq(1)').hover(function() {
+	$('.leftlinkmenu:eq(1)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(1)').css('opacity', '1');
+	$('.leftlinkmenu:eq(0)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$('.leftlinkmenu:eq(1)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(1)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(0)').css('opacity', '1');
+});
+
+$('.leftlinkmenu:eq(2)').hover(function() {
+	$('.leftlinkmenu:eq(2)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(2)').css('opacity', '1');
+	$('.leftlinkmenu:eq(0)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$('.leftlinkmenu:eq(2)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(2)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(0)').css('opacity', '1');
+});
+
+$('.leftlinkmenu:eq(4)').hover(function() {
+	$('.leftlinkmenu:eq(4)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(4)').css('opacity', '1');
+	$('.leftlinkmenu:eq(0)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$('.leftlinkmenu:eq(4)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(4)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(0)').css('opacity', '1');
+});
+
+
+
+
+</script>
 </html>
