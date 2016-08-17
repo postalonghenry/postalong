@@ -107,23 +107,29 @@ $(".fapostformwhite").prev().clone(true).insertBefore('.fapostformwhite')
 $('.orderpublish').click(function() {
 	
 	if ($("#pendingorder").addClass('show')) {
-		
-		$('.biaoji').hide();
+		$(this).parentsUntil('.biaoji').css('display', 'none');
 		
 
 	} else {
 		$("#pendingorder").addClass('show')
-		$('.biaoji').hide();
+		$(this).parentsUntil('.biaoji').css('display', 'none');
+		
 
 	}
 	
 	});
+<<<<<<< HEAD
 
 
 
 
 
 $('.editor').click(function() {
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+//待接单按钮操作
+>>>>>>> origin/master
 // $('.editor').click(function() {
 
 
@@ -138,7 +144,14 @@ $('.biaoji').show();
 // $('.biaoji').show();
 // 	/* Act on the event */
 // });
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> parent of e35aac0... 222
+=======
+>>>>>>> parent of e35aac0... 222
+>>>>>>> origin/master
 
 
 		
