@@ -119,6 +119,7 @@ $('.orderpublish').click(function() {
 	
 	});
 <<<<<<< HEAD
+<<<<<<< HEAD
 //待接单按钮操作
 // $('.editor').click(function() {
 
@@ -128,6 +129,8 @@ $('.orderpublish').click(function() {
 // $('.biaoji').show();
 // 	/* Act on the event */
 // });
+=======
+>>>>>>> parent of e35aac0... 222
 =======
 >>>>>>> parent of e35aac0... 222
 
