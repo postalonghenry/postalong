@@ -119,6 +119,7 @@ $('.orderpublish').click(function() {
 	
 	});
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -130,20 +131,18 @@ $('.editor').click(function() {
 <<<<<<< HEAD
 //待接单按钮操作
 >>>>>>> origin/master
+=======
+//待接单按钮操作
+>>>>>>> parent of 96a2c89... Revert "43535"
 // $('.editor').click(function() {
 
-
-$("#pendingorder").removeClass('show');
-$("#pendingorder").addClass('hidden')
-$('.biaoji').show();
-	/* Act on the event */
-});
 // $("#pendingorder").hide();
 // $("#pendingorder").removeClass('show');
 // $("#pendingorder").addClass('hidden')
 // $('.biaoji').show();
 // 	/* Act on the event */
 // });
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -152,6 +151,10 @@ $('.biaoji').show();
 =======
 >>>>>>> parent of e35aac0... 222
 >>>>>>> origin/master
+=======
+=======
+>>>>>>> parent of e35aac0... 222
+>>>>>>> parent of 96a2c89... Revert "43535"
 
 
 		
