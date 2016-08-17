@@ -118,18 +118,27 @@ $('.orderpublish').click(function() {
 	}
 	
 	});
-<<<<<<< HEAD
-//待接单按钮操作
+
+
+
+
+
+$('.editor').click(function() {
 // $('.editor').click(function() {
 
+
+$("#pendingorder").removeClass('show');
+$("#pendingorder").addClass('hidden')
+$('.biaoji').show();
+	/* Act on the event */
+});
 // $("#pendingorder").hide();
 // $("#pendingorder").removeClass('show');
 // $("#pendingorder").addClass('hidden')
 // $('.biaoji').show();
 // 	/* Act on the event */
 // });
-=======
->>>>>>> parent of e35aac0... 222
+
 
 
 		
