@@ -1,9 +1,3 @@
-a:link,a:hover,a:visited {
-    color: white;
-    font-family: 宋体;
-    text-align: left;
-    text-decoration: none;
-}
 #header{
 		width: 100%;
 		height: 90px;
@@ -275,7 +269,17 @@ background-color: #FFFFFF;
 
 }
 #masking .hidden{
-			
+			/*margin-left:10%;
+			margin-right: 10%;
+			position: absolute;
+			left: 20%;
+			right: 20%;
+			top: 2%;
+			margin-bottom: 10px;
+			background: #FFFFFF;
+			border-radius: 10px;	
+			box-shadow: 3px 5px 3px black;	
+			z-index: 160;*/
 			display: hidden;
 
 }
@@ -506,14 +510,12 @@ margin-bottom: 0;
 		width: 20%;
 		height: 63px;
 		float: left;
-		margin-top: 60px;
 		line-height:63px; 
 
 		 }
 	 #pendingorder #top .righttop{
 		width: 45%;
 		height: 63px;
-		margin-top: 60px;
 		float: right;
 		line-height:63px; 
 		
@@ -679,6 +681,8 @@ margin-bottom: 0;
 		margin-left: 30%;
 		margin-top: 10%;
 	}
+<<<<<<< HEAD
+<<<<<<< HEAD
 	//议价中
 	#masking .yijiazhong{
 			margin-left:10%;
@@ -883,4 +887,16 @@ margin-bottom: 0;
 		margin-left: 30%;
 		margin-top: 10%;
 	}
+	
+=======
+>>>>>>> parent of e35aac0... 222
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> parent of 4e33a53... 43535
+=======
+>>>>>>> parent of e35aac0... 222
+>>>>>>> origin/master
+=======
+>>>>>>> parent of 96a2c89... Revert "43535"
 

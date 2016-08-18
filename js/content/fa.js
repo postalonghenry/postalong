@@ -85,26 +85,54 @@ $(".fapostformwhite").prev().clone(true).insertBefore('.fapostformwhite')
 $('.orderpublish').click(function() {
 	
 	if ($("#pendingorder").addClass('show')) {
-		
-		$('.biaoji').hide();
+		$(this).parentsUntil('.biaoji').css('display', 'none');
 		
 
 	} else {
 		$("#pendingorder").addClass('show')
-		$('.biaoji').hide();
+		$(this).parentsUntil('.biaoji').css('display', 'none');
+		
 
 	}
 	
 	});
-//待接单按钮操作
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+
+
 $('.editor').click(function() {
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+//待接单按钮操作
+>>>>>>> origin/master
+=======
+//待接单按钮操作
+>>>>>>> parent of 96a2c89... Revert "43535"
+// $('.editor').click(function() {
 
+// $("#pendingorder").hide();
+// $("#pendingorder").removeClass('show');
+// $("#pendingorder").addClass('hidden')
+// $('.biaoji').show();
+// 	/* Act on the event */
+// });
+<<<<<<< HEAD
+<<<<<<< HEAD
 
-$("#pendingorder").removeClass('show');
-$("#pendingorder").addClass('hidden')
-$('.biaoji').show();
-	/* Act on the event */
-});
+=======
+=======
+>>>>>>> parent of e35aac0... 222
+=======
+>>>>>>> parent of e35aac0... 222
+>>>>>>> origin/master
+=======
+=======
+>>>>>>> parent of e35aac0... 222
+>>>>>>> parent of 96a2c89... Revert "43535"
 
 
 		
