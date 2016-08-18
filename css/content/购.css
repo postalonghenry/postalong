@@ -170,19 +170,35 @@ margin-top: 30px;
   border-bottom: 15px solid transparent;
 }
 input::-webkit-input-placeholder {
-color: red !important;
+color: #21b796 !important;
 }
  
 input:-moz-placeholder { /* Firefox 18- */
-color: red !important;  
+color: #21b796 !important;  
 }
  
 input::-moz-placeholder {  /* Firefox 19+ */
-color: red !important;  
+color: #21b796 !important;  
 }
  
 input:-ms-input-placeholder {  
-color: red !important;  
+color: #21b796 !important;  
+}
+
+textarea::-webkit-input-placeholder {
+color: #21b796 !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: #21b796 !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #21b796 !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: #21b796 !important;  
 }
 
 .userinfo{
@@ -278,4 +294,137 @@ width: 100%;
 
 .review h3{
 	margin-top: 20px;
+}
+
+.shangp{
+margin-left: 30px;
+margin-top: 30px;
+margin-bottom: 40px;
+}
+.chakanshangp{
+  background-color: #eeeeee;
+  color: #21b796;
+  border:0 ;
+  width: 80%;
+  margin-top: 20px;
+  display: inline;
+  box-shadow: 2px 2px 5px  grey;   
+}
+
+.shopinfo h3{
+padding-top: 5px;
+padding-left:15px;
+color: #21b796;
+}
+.shoptop {
+  padding-top: 15px;
+
+}
+.shangimg{
+margin-top: 30px;
+margin-bottom: 40px;
+margin-left: -30px;
+
+}
+.shangimg img{
+  width: 100%;
+  border-radius: 10px;
+}
+.shangchuanzhaop{
+  background-color: #21b796;
+  width:80%;
+  margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+box-shadow: 2px 2px 5px  grey;   
+}
+.shopd h3{
+padding-top: 15px;
+
+color: #21b796;
+}
+.shopd p{
+  max-width: 100%;
+padding-top: 5px;
+overflow-wrap: break-word;
+color: #21b796;
+}
+
+.shangdd{
+  margin-top: 30px;
+margin-bottom: 40px;
+}
+
+.shopdd h3{
+padding-top: 20px;
+padding-left:15px;
+color: #21b796;
+}
+
+.shopdd span{
+font-size: x-large;
+color:red;
+}
+
+.xiugaibianji{
+  background-color: grey;
+  width:80%;
+  color: white;
+  margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+box-shadow: 2px 2px 5px  grey;   
+}
+.parttwo img{
+width: 100%;
+border-radius: 10px;
+}
+
+.wupd{
+  margin-top: 10px;
+ padding-left: 20px;
+}
+.wupd1{
+  margin-top: 10px;
+ 
+}
+.shangchuanzhaop1{
+  background-color: #21b796;
+  width:80%;
+  margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+box-shadow: 2px 2px 5px  grey;   
+}
+.shangchuanzhaop2{
+  background-color: #21b796;
+  width:80%;
+  margin-top: 90px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+box-shadow: 2px 2px 5px  grey;   
+}
+.staffinfo h1{
+  margin-top:20px; 
+  padding-left: 20px;
+  padding-bottom:20px; 
+  font-size: x-large;
+  color: #21b796;
+}
+
+.form-group input{
+  border:1px #21b796 solid;
+}
+
+.form-group select{
+  border:1px #21b796 solid;
+  color:  #21b796;
+}
+
+.form-group textarea{
+  border:1px #21b796 solid;
 }
