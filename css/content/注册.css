@@ -1,0 +1,116 @@
+.zhuce{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.zhuce h1{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.red {
+	color: red;
+}
+.checktype{
+	display: inline-block;
+	width: 30%;
+margin-bottom: 20px;
+font-weight: bolder;
+font-size: large;
+
+}
+
+.form-zhuce{
+	margin-bottom: 10px;
+}
+.form-control{
+border-radius: 0;
+border:1px grey solid; 
+}
+
+.new{
+	display: inline;
+	float: right;	
+	padding-left: 5%;
+	margin-bottom: 30px;
+}
+
+.new a{
+	color: lightgrey;
+
+}
+.row1{
+	clear: both;
+}
+.button{
+	
+	display: inline-block;
+	float: right;	
+	padding-left: 45px;
+	margin-bottom: 30px;
+}
+
+.button a{
+	font-size: large;
+	color: #21b796;
+}
+
+
+
+
+.short{
+	width: 50%;
+	display: inline-block;
+}
+
+.yanzh{
+	vertical-align: top;
+	border-radius: 0;
+	border:1px grey solid;
+	width: 50%;
+	margin-left: -5px;
+	color: #21b796;
+
+}
+
+.checkbox2{
+	text-align: center;
+	color: #21b796;
+
+}
+.row2{
+	margin-top: 70px;
+}
+
+.button2{
+	width: 49%;
+	display: inline-block;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.button2 a{
+	font-size: large;
+	color: #21b796;
+}
+.button3{
+	width: 100%;
+	display: inline-block;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.button3 a{
+	font-size: large;
+	color: #21b796;
+}
+.forminline{
+	display: inline-block;
+}
+

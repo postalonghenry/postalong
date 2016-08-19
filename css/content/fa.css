@@ -1,8 +1,243 @@
+/**************************八大状态*******************************/
+.flag {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: purple;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+ 
+
+}
+.flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+.flag1 {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: #FFDA41;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+
+}
+.flag1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+    
+.flag2 {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: #1F4A66;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+}
+.flag2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+   
+.flag3 {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: #1F2FE0;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+}
+.flag3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+.flag4 {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: #21b796;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+}
+.flag4:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+.flag5 {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: darkred;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+}
+.flag5:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+
+.flag6 {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: #65E4C2;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+}
+.flag6:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+.flag7 {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: #eeeeee;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+}
+.flag7:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+.flag8 {
+  width: 106px;
+  height: 36px;
+  position: relative;
+  background: #00738C;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+}
+.flag8:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+/******************************************************/
+a:link,a:hover,a:visited {
+    color: white;
+    font-family: 宋体;
+    text-align: left;
+    text-decoration: none;
+}
 #header{
 		width: 100%;
 		height: 90px;
 		}
-	/************************************ÉÏÃæÊÇÍ·²¿ÐÅÏ¢************************************************************/
+	/************************************************************************************************/
 	#content{
 		display: inline-block;
 		width: 100%;
@@ -11,15 +246,17 @@
 
 		
 		}
-	/*******************ÉÏÃæÊÇÄÚÈÝÇø¶¨Òå********************************************/
+	/***************************************************************/
 	#content .search{		
-		height: 400px;		
-		background-image: url(../img/fa/fa.png);	//±³¾°Í¼	
+		height: 400px;
+		background-image: url(../../img/fa/fa.png);
+		background-position: left bottom;
+	
+		background-size:100% 400px;				
 		-moz-background-size:100% 400px;
 		-webkit-background-size:100% 400px;
-		-o-background-size:100% 400px;
-		background-size:100% 400px;
-     	background-position: left bottom;	 	
+		-o-background-size:100% 400px;		
+     		 	
 			
 	}
 	#content .search .leftlink{
@@ -41,7 +278,11 @@
 		background:#FFFFFF;
 		opacity: 0.5;
 		
+	}
+	#content .search .leftlink .leftlinkmenu a{
+		color: #21B796;
 		font-weight: bold;
+
 	}
 	#content .search .leftlink .leftlinkmenu a:link{
 		color: #BFEAE1;
@@ -64,7 +305,7 @@
 
 	}
 	
-/****************ÉÏÃæÊÇsearchÀïÃæ×ó±ßµÄÁù¸öÔ²µÄÑùÊ½**************************************/
+/******************************************************/
 	
 
 	#content .search .inputsearch{
@@ -122,7 +363,7 @@ background-color: #FFFFFF;
 		line-height: middle;
 	}
 	
-	/******************************ÏÂÃæÊÇÄÚÈÝÇøÑùÊ½*********************************/
+	/***************************************************************/
 	#content .pageheader{
 		width: 19.4%;
 		height: 50px;
@@ -139,11 +380,14 @@ background-color: #FFFFFF;
 		width: 19.4%;
 		height: 185px;
 		background: #FFFFFF;
+		/*border-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;*/
 		float:left;
 		margin-left: 9px;
 		margin-top: 13px;
-		border-radius: 10px;
-
+		margin-bottom: 10px;		
+		cursor:pointer;
 	}
 	#content .smallcontent .smallcontentleft{
 		width: 50%;
@@ -215,7 +459,7 @@ background-color: #FFFFFF;
 		float: right;
 		width: 60%;
 		height: 40%;
-		margin-top: 18%;		
+		margin-top: 2%;		
 		text-align: right;
 		
 		
@@ -262,17 +506,7 @@ background-color: #FFFFFF;
 
 }
 #masking .hidden{
-			/*margin-left:10%;
-			margin-right: 10%;
-			position: absolute;
-			left: 20%;
-			right: 20%;
-			top: 2%;
-			margin-bottom: 10px;
-			background: #FFFFFF;
-			border-radius: 10px;	
-			box-shadow: 3px 5px 3px black;	
-			z-index: 160;*/
+			
 			display: hidden;
 
 }
@@ -490,6 +724,7 @@ margin-bottom: 0;
 			border-radius: 10px;	
 			z-index: 100;	
 			box-shadow: 10px 10px 5px #151A19;
+			display:none;
 			}
 	 #pendingorder #top{
 	 	width: 90%;
@@ -503,12 +738,14 @@ margin-bottom: 0;
 		width: 20%;
 		height: 63px;
 		float: left;
+		margin-top: 60px;
 		line-height:63px; 
 
 		 }
 	 #pendingorder #top .righttop{
 		width: 45%;
 		height: 63px;
+		margin-top: 60px;
 		float: right;
 		line-height:63px; 
 		
@@ -674,10 +911,9 @@ margin-bottom: 0;
 		margin-left: 30%;
 		margin-top: 10%;
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
 	//议价中
 	#yijiazhong{
+	
 			margin-left:10%;
 			margin-right: 10%;
 			position: absolute;
@@ -685,12 +921,14 @@ margin-bottom: 0;
 			right: 10%;
 			top: 10%;
 			bottom: 10%;
-			background: #FFFFFF;
+			background: #C53232;
 			border-radius: 10px;	
-			z-index: 100;
+			z-index: 500;
 			box-shadow: 10px 10px 5px #151A19;
+			display: none;
+
 			}
-	 #yijiazhong #top{
+	 .yijiazhong #top{
 	 	width: 90%;
 	 	height: 16%;
 	 	margin-left:5%;
@@ -698,14 +936,14 @@ margin-bottom: 0;
 	border-bottom: 1px solid #000000;
 	
 	}
-	 #yijiazhong #top .lefttop{
+	 .yijiazhong #top .lefttop{
 		width: 20%;
 		height: 63px;
 		float: left;
 		margin-top: 40px;
 		line-height:63px; 
 		 }
-	 #yijiazhong #top .righttop{
+	 .yijiazhong #top .righttop{
 		width: 45%;
 		height: 63px;
 		float: right;
@@ -713,12 +951,12 @@ margin-bottom: 0;
 		line-height:63px; 
 		
 		 }	
-	 #yijiazhong #top .righttop img{
+	 .yijiazhong #top .righttop img{
 	 	width: 55%;
 	 	height: 36px;
 	 	line-height:90px; 
 	 } 
-	 #yijiazhong #middle{
+	 .yijiazhong #middle{
 			width: 90%;
 			height: 26%;
 			margin-left:5%;
@@ -726,12 +964,12 @@ margin-bottom: 0;
 			border-bottom: 1px solid #000000;
 
 	}
-	#yijiazhong #middle .middletop{
+	.yijiazhong #middle .middletop{
 
 		width: 100%;
 		height: 70%;
 			}
-	#yijiazhong #middle .middletop .middletopleft{
+	.yijiazhong #middle .middletop .middletopleft{
 		width: 25%;
 		height: 100%;
 		float: left;
@@ -739,36 +977,36 @@ margin-bottom: 0;
 		margin-top:4px;
 	}
 
-	#yijiazhong #middle .middletop .middletopleft span{
+	.yijiazhong #middle .middletop .middletopleft span{
 		line-height: 68px;
 		font-size: 30px;
 		float:left;
 		margin-left: 2%;
 	}
-	#yijiazhong #middle .middletop .middletopright span{
+	.yijiazhong #middle .middletop .middletopright span{
 		line-height: 68px;
 		font-size: 30px;
 		float:left;
 		margin-left: 2%;
 	}
-	#yijiazhong #middle .middletop .middletopleft img{
+	.yijiazhong #middle .middletop .middletopleft img{
 		width: 68px;
 		height: 68px;
 		float:left;
 	}
-	#yijiazhong #middle .middletop .middletopmiddle{
+	.yijiazhong #middle .middletop .middletopmiddle{
 		width: 20%;
 		height: 100%;
 		float: left;
 		
 		
 	}
-	#yijiazhong #middle .middletop .middletopright img{
+	.yijiazhong #middle .middletop .middletopright img{
 		width: 68px;
 		height: 68px;
 		float:left;
 	}
-	#yijiazhong #middle .middletop .middletopright{
+	.yijiazhong #middle .middletop .middletopright{
 		width: 30%;
 		height: 100%;
 		float:right;
@@ -776,11 +1014,11 @@ margin-bottom: 0;
 		margin-top:4px;
 	}
 
-	#yijiazhong #middle .middlebottom{
+	.yijiazhong #middle .middlebottom{
 		width: 100%;
 		height: 30%;	
 	}
-	#yijiazhong #middle .middlebottom .middlebottomleft{
+	.yijiazhong #middle .middlebottom .middlebottomleft{
 		width: 25%;
 		height: 100%;
 	
@@ -789,7 +1027,7 @@ margin-bottom: 0;
 		text-align: center;
 		line-height: 31px;
 	}
-	#yijiazhong #middle .middlebottom .middlebottomright{
+	.yijiazhong #middle .middlebottom .middlebottomright{
 		width: 30%;
 		height: 100%;
 
@@ -798,7 +1036,7 @@ margin-bottom: 0;
 		text-align: center;
 		line-height: 31px;
 	}
-	#yijiazhong #footer{
+	.yijiazhong .di{
 	width: 90%;		
 	height: 58%;			
 	margin-left:5%;
@@ -806,24 +1044,24 @@ margin-bottom: 0;
 	
 	}
 
-	#yijiazhong #footer .footerleft{
+	.yijiazhong .di .dileft{
 		width: 60%;
 		height: 100%;
 		float: left;
 	
 	}
-	#yijiazhong #footer .footerleft .footerleftupleft{
+	.yijiazhong .di .dileft .dileftupleft{
 		width: 50%;
 		height: 58%;
 		float: left;
 		}
-	#yijiazhong #footer .footerleft .footerleftupright{
+	.yijiazhong .di .dileft .dileftupright{
 		width: 50%;
 		height: 58%;
 		float: right;
 		/*background: #FFCC02;*/
 	}
-	#yijiazhong #footer .footerleft .footerleftupright .footerleftuprightinside{
+	.yijiazhong .di .dileft .dileftupright .dileftuprightinside{
 		width: 60%;
 		height: 58px;
 		margin-top: 20px;
@@ -835,19 +1073,19 @@ margin-bottom: 0;
 		color:#FFFFFF;
 		font-weight: bold;
 	}
-	#yijiazhong #footer .footerleft .footerleftmiddle{
+	.yijiazhong .di .dileft .dileftmiddle{
 		width: 100%;
 		height: 20%;
 		float: left;
 		
 	}
-	#yijiazhong #footer .footerleft .footerleftbottom{
+	.yijiazhong .di .dileft .dileftbottom{
 
 		width: 100%;
 		height: 22%;
 		float: left;
 		}
-	#yijiazhong #footer .footerleft .footerleftbottom .cancel{
+	.yijiazhong .di .dileft .dileftbottom .cancel{
 		margin-left:10%;
 		width: 221px;
 		height: 61px;
@@ -856,7 +1094,7 @@ margin-bottom: 0;
 		margin-top:3px;
 		box-shadow: 10px 10px 5px #A0A0A0;
 	}
-	#yijiazhong #footer .footerleft .footerleftbottom .editor{
+	.yijiazhong .di .dileft .dileftbottom .editor{
 		margin-left:10%;
 		width: 221px;
 		height: 61px;
@@ -865,29 +1103,17 @@ margin-bottom: 0;
 		margin-top:3px;
 		box-shadow: 10px 10px 5px #A0A0A0;
 	}
-	#yijiazhong #footer .footerright{
+	.yijiazhong .di .diright{
 		width: 40%;
 		height: 100%;
 		float: right;
 	
 		}
-	#yijiazhong #footer .footerright img{
+	.yijiazhong .di .diright img{
 		width: 70%;
 		height: 70%;
 		border-radius: 30px;
 		margin-left: 30%;
 		margin-top: 10%;
 	}
-	
-=======
->>>>>>> parent of e35aac0... 222
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> parent of 4e33a53... 43535
-=======
->>>>>>> parent of e35aac0... 222
->>>>>>> origin/master
-=======
->>>>>>> parent of 96a2c89... Revert "43535"
 

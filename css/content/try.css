@@ -213,3 +213,29 @@
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
+.flag8 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #00738C;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag8:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
