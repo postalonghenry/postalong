@@ -1,15 +1,17 @@
 .flag {
-  width: 110px;
-  height: 46px;
-  padding-top: 110px;
+  width: 106px;
+  height: 30px;
   position: relative;
-  background: red;
+  background: purple;
   color: white;
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 250px;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
 }
 .flag:after {
   content: "";
@@ -18,14 +20,222 @@
   bottom: 0;
   width: 0;
   height: 0;
-  border-bottom: 13px solid #eee;
-  border-left: 55px solid transparent;
-  border-right: 55px solid transparent;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
 }
-        
-.flagr{
-  -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg);
+.flag1 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #FFDA41;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
     
+.flag2 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #1F4A66;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+   
+.flag3 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #1F2FE0;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.flag4 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #21b796;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag4:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.flag5 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: darkred;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag5:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+
+.flag6 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #65E4C2;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag6:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.flag7 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #eeeeee;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag7:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.flag8 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #00738C;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag8:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
 }

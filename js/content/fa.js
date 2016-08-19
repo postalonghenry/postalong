@@ -85,55 +85,76 @@ $(".fapostformwhite").prev().clone(true).insertBefore('.fapostformwhite')
 $('.orderpublish').click(function() {
 	
 	if ($("#pendingorder").addClass('show')) {
-		$(this).parentsUntil('.biaoji').css('display', 'none');
+		
+		$('.biaoji').hide();
 		
 
 	} else {
 		$("#pendingorder").addClass('show')
-		$(this).parentsUntil('.biaoji').css('display', 'none');
-		
+		$('.biaoji').hide();
 
 	}
 	
 	});
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-
-
+//待接单按钮操作
 $('.editor').click(function() {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-//待接单按钮操作
->>>>>>> origin/master
-=======
-//待接单按钮操作
->>>>>>> parent of 96a2c89... Revert "43535"
-// $('.editor').click(function() {
 
-// $("#pendingorder").hide();
-// $("#pendingorder").removeClass('show');
-// $("#pendingorder").addClass('hidden')
-// $('.biaoji').show();
-// 	/* Act on the event */
-// });
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-=======
->>>>>>> parent of e35aac0... 222
-=======
->>>>>>> parent of e35aac0... 222
->>>>>>> origin/master
-=======
-=======
->>>>>>> parent of e35aac0... 222
->>>>>>> parent of 96a2c89... Revert "43535"
-
+$("#pendingorder").removeClass('show');
+$("#pendingorder").addClass('hidden')
+$('.biaoji').show();
+	/* Act on the event */
+});
+//smallcontent效果
+;
+	$(".smallcontent").mouseenter(function(){
+  $(this).siblings().css({
+  	opacity: '0.4',
+  
+  });
+});
+	
+	$(".smallcontent").mouseleave(function(){
+  $(this).siblings().css({
+  	opacity:'1',
+  });
+});
+	$('#neworders').removeClass('show')
+//得到八大块的具体内容
+$('.smallcontent').click(function() {
+	var status=$(this).children('.smallcontentright').children('.smallcontentrightDown').children('.smallcontentrightdownbox').children().html()
+	
+	switch (status)
+	{
+	case '已取货':
+	
+		alert(status)
+		break;
+	case '待接单':
+	   alert(status)
+	   break;
+	case '待付款':
+	   alert(status)
+	   break;
+	case '已完成':
+	   alert(status)
+	   break;
+	case '已取消':
+	   alert(status)
+	   break;
+	case '议价中':
+	   
+	  $('#masking').css('display', 'block');
+	   alert( $('#yijia').html())
+	   break;
+	case '未取货':
+	   alert(status)
+	   break;
+	case '待评价':
+	   alert(status)
+	   break;
+	}
+});
 
 		
 	
