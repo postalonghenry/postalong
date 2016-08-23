@@ -8,6 +8,7 @@
 
 <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/content/fa.css">
+<link rel="stylesheet" type="text/css" href="../css/public/wei.css">
 </head>
 <body >
  <div id="header">
@@ -317,14 +318,35 @@
   </div><!--smallcontent-->
 	</div><!--smallcontentwrap-->
  </div><!--content-->
- <div id="footer">
- <object data="footer.html" type="text" width="100%" height="100%"></object>
- </div>
+<div class="footer clearfix">
+    <div class="auto">
+
+      <div class="footer-section">
+                <img src="../img/public/bottomLogo.png" class="fl btmlogos" usemap="#linkToOther">
+                <map name= "linkToOther">
+                    <area shape="rect" target="_blank" coords="60,0,103,40" href="http://weibo.com/5839493601/profile?topnav=1&wvr=6&is_all=1" alt="sina page">
+                    <area shape="rect" target="_blank" coords="134,0,164,40" href="https://www.facebook.com/post.along/" alt="facebook page">
+                </map>
+      </div>
+    
+      <div class="footer-section" style="float: right;">
+        <img src="../img/public/botnLogo.png" class="botnLogo fr">
+      </div>
+      
+            <div class="footer-section" style="margin-top:44px; font-size: 18px;margin-left: 20px;">
+        客服电话： 778-400-5798 
+      </div>
+            
+      <p class="fl btmpresent clearfix">Copyright ©2014-2016 All Rights reserved. 互递科技有限公司postalong technology inc. (www.postalong.com)版权所有</p>
+      
+    </div>
+  </div><!--footer-->
  
  <!-- 下面全是各种模态框 -->
 
  <!-- 创建新订单模态框 -->
- <div id="masking">
+ <div id="maskwrap">
+ <div id="newordermask">
  <div id="neworder">
 		<div class="toptitle">
 		<h2>发布新订单</h2>
@@ -407,11 +429,13 @@
       <button type="submit" class="btn btn-default fabu2 checkbox1 ordercancel">取消</button>
   </div>
   <div class="checkbox1">
-<button type="button" class="btn btn-success fabu3 checkbox1 orderpublish">推送并发布</button>
+<button type="button" class="btn btn-success fabu3 checkbox1 orderpublish" onclick="selectmodal('待接单')">推送并发布</button>
 </div>
 </div>	
-</div><!--neworder-->
+</div><!--neworder--></div><!--newordermask-->
+
 <!-- 批量发布,neworders -->
+<div id=newordersmask>
 <div id="neworders">
 		<div class="toptitle">
 		<h2>批量发布订单</h2>
@@ -517,70 +541,26 @@
       <button type="submit" class="btn btn-default fabu2 checkbox1 ordercancel">取消</button>
   </div>
   <div class="checkbox1">
-<button type="button" class="btn btn-success fabu3 checkbox1 orderpublish">推送并发布</button>
+<button type="button" class="btn btn-success fabu3 checkbox1 orderpublish" onclick="selectmodal('待接单')">推送并发布</button>
 
 </div>
 </form>
 </div><!--neworders-->
-<!-- 以下为待接单 -->
-<div id="pendingorder">
-		<div id="top">
-			<div class="lefttop"><span>物品名称：蓝莓</span></div>
-			<div class="righttop"><span>订单号：1111111111111
-      <div class="flag">待接单</div>
-       </span></div><!--righttop-->
-		</div><!--top-->
-		<div id="middle">
-			<div class="middletop">
-				<div class="middletopleft">
-					<img src="../img/fa/qi.png" alt=""><span>日本大阪</span>
-				</div><!--middletopleft-->
-				<div class="middletopmiddle"><br><p>.............................................</p></div><!--middletopmiddle-->
-				<div class="middletopright">
-					<img src="../img/fa/zhong.png" alt=""><span>加拿大温哥华</span>
-				</div><!--middletopright-->
-			</div><!--middletop-->
-			<div class="middlebottom">
-				<div class="middlebottomleft">
-					<span>取货时间：2016-8-8 12:20</span>
-				</div><!--middlebottomleft-->
-				<div class="middlebottomright">
-					<span>送达时间：2016-8-8 6:30</span>
-				</div><!--middlebottomright-->
-			</div><!--middlebottom-->
-		</div><!--middle-->
-		<div id="footer">
-			<div class="footerleft">
-				<div class="footerleftupleft">
-					<p>物品重量：50kg</p>
-					<p>物品价格：$200</p>
-				</div>
-				<div class="footerleftupright">
-					<div class="footerleftuprightinside">
-						报酬：￥60
-					</div>
-				</div>
-				<div class="footerleftmiddle">
-					物品描述：保持外包装完好，谢谢。
-				</div>
-				<div class="footerleftbottom">
-					<button class="btn btn-default btn-lg cancel ordercancel">取消</button>
-					<button class="btn btn-default btn-lg editor">修改编辑</button>
-				</div>
-			</div><!--footerleft-->
-			<div class="footerright">
-				<img src="../img/fa/blueberry.jpg" alt="">
-			</div><!--footerright-->
-		</div><!--footer-->
-	</div><!--pendingorder-->
-	
-  <!-- 议价 -->
-  <div id="yijia">
-    <div id="top">
+</div>
+<!--newordersmask批量结束-->
+
+
+<!-- 议价 -->
+  <div id="yjmask">
+ <div id="yj">
+   <p>我是议价中</p>
+ </div><!--yj--></div><!--yjmask-->
+ <!-- 待接单 -->
+ <div id="djdmask">
+ <div id="djd">
+   <div id="top">
       <div class="lefttop"><span>物品名称：蓝莓</span></div>
-      <div class="righttop"><span>订单号：1111111111111 
-      <div class="flag">待接单</div>
-      </span></div><!--righttop-->
+      <div class="righttop"><span>订单号：1111111111111 <img alt="待接单" src="../img/fa/待接单.png"></span></div><!--righttop-->
     </div><!--top-->
     <div id="middle">
       <div class="middletop">
@@ -601,33 +581,216 @@
         </div><!--middlebottomright-->
       </div><!--middlebottom-->
     </div><!--middle-->
-    <div class="di">
-      <div class="dileft">
-        <div class="dileftupleft">
+    <div id="footer">
+      <div class="footerleft">
+        <div class="footerleftupleft">
           <p>物品重量：50kg</p>
           <p>物品价格：$200</p>
         </div>
-        <div class="dileftupright">
-          <div class="dileftuprightinside">
+        <div class="footerleftupright">
+          <div class="footerleftuprightinside">
             报酬：￥60
           </div>
         </div>
-        <div class="dileftmiddle">
+        <div class="footerleftmiddle">
           物品描述：保持外包装完好，谢谢。
         </div>
-        <div class="dileftbottom">
-          <button class="btn btn-default btn-lg cancel" >取消</button>
-          <button class="btn btn-default btn-lg editor" >查看议价</button>
+        <div class="footerleftbottom">
+          <button class="btn btn-default btn-lg cancel" id="ca">取消</button>
+          <button class="btn btn-default btn-lg editor" id=ed>修改编辑</button>
         </div>
-      </div><!--dileft-->
-      <div class="diright">
+      </div><!--footerleft-->
+      <div class="footerright">
         <img src="../img/fa/blueberry.jpg" alt="">
-      </div><!--diright-->
-     </div><!--di-->
+      </div><!--footerright-->
+    </div><!--footer-->
+ </div><!--djd--></div><!--djdmask-->
+ <!-- 待付款 -->
+ <div id="dfkmask">
+ <div id="dfk">
+  <div id="top">
+      <div class="lefttop"><span>物品名称：蓝莓</span></div>
+      <div class="righttop"><span>订单号：1111111111111 <img alt="待付款" src="../img/fa/待付款.png"></span></div><!--righttop-->
+    </div><!--top-->
+    <div id="middle">
+      <div class="middletop">
+        <div class="middletopleft">
+          <img src="../img/fa/qi.png" alt=""><span>日本大阪</span>
+        </div><!--middletopleft-->
+        <div class="middletopmiddle"><br><p>.............................................</p></div><!--middletopmiddle-->
+        <div class="middletopright">
+          <img src="../img/fa/zhong.png" alt=""><span>加拿大温哥华</span>
+        </div><!--middletopright-->
+      </div><!--middletop-->
+      <div class="middlebottom">
+        <div class="middlebottomleft">
+          <span>取货时间：2016-8-8 12:20</span>
+        </div><!--middlebottomleft-->
+        <div class="middlebottomright">
+          <span>送达时间：2016-8-8 6:30</span>
+        </div><!--middlebottomright-->
+      </div><!--middlebottom-->
+    </div><!--middle-->
+    <div id="footer">
+      
+      <div class="footerup">
+        <div class="footerup-up">
+          <div class="footerup-up-left">
+            <p>订单号：3333333333333</p>
+          </div><!--footerup-up-left-->
+          <div class="footerup-up-right">
+            <p>金额：￥400</p>
+          </div><!--footerup-up-right-->
+        </div><!--footerup-up-->
+        <div class="footerup-down">
+          <div class="footerup-down-left">使用余额：<input type="radio" class="radio-inline "></div>
+          <div class="footerup-down-middle">使用信用卡:<input type="radio" class="radio-inline"></div>
+          <div class="footerup-down-right">使用微信:<input type="radio" class="radio-inline"></div>
+        </div><!--footerup-down-->
+      </div><!--footerup-->
+      <div class="footermiddle">
+        <div class="footermiddle-left">
+          <p>姓名</p>
+          <input type="text" class="form-control"><br>
+          <p>输入卡号</p>
+          <input type="text" class="form-control"><br>
+          <p>安全吗</p>
+          <input type="text" class="form-control">
 
-  </div><!--yijia-->
-</div><!--masking-->
-
+        </div><!--footermiddle-left-->
+        <div class="footermiddle-right">
+          <p>有效期</p>
+          <input type="text" class="form-control" placeholder="年">
+          <input type="text" class="form-control" placeholder="月">
+        </div><!--footermiddle-right-->
+      </div><!--footermiddle-->
+      <div class="footerbottom">
+        <button class="btn-lg cancel">取消</button>
+        <button type="submit" class="btn-lg pay">支付</button>
+      </div><!--footerbottom-->
+    </div><!--footer--> 
+ </div><!--dfk--></div><!--dfkmask-->
+ <!-- 已取货 -->
+ <div id="yqhmask">
+ <div id="yqh">
+   <div id="top">
+      <div class="lefttop"><span>物品名称：蓝莓</span></div>
+      <div class="topmiddle">
+        <p><b>递送人收获码</b>12345698</p>
+      </div>
+      <div class="righttop"><span>订单号：1111111111111 <img alt="待接单" src="../img/fa/已取货.png"></span></div><!--righttop-->
+    </div><!--top-->
+    <div id="middle">
+      <div class="middletop">
+        <div class="middletopleft">
+          <img src="../img/fa/qi.png" alt=""><span>日本大阪</span>
+        </div><!--middletopleft-->
+        <div class="middletopmiddle"><br><p>.............................................</p></div><!--middletopmiddle-->
+        <div class="middletopright">
+          <img src="../img/fa/zhong.png" alt=""><span>加拿大温哥华</span>
+        </div><!--middletopright-->
+      </div><!--middletop-->
+      <div class="middlebottom">
+        <div class="middlebottomleft">
+          <span>取货时间：2016-8-8 12:20</span>
+        </div><!--middlebottomleft-->
+        <div class="middlebottomright">
+          <span>送达时间：2016-8-8 6:30</span>
+        </div><!--middlebottomright-->
+      </div><!--middlebottom-->
+    </div><!--middle-->
+    <div id="footer">
+      <div class="footerleft">
+        <div class="footerleftupleft">
+          <p>物品重量：50kg</p>
+          <p>物品价格：$200</p>
+        </div>
+        <div class="footerleftupright">
+          <div class="footerleftuprightinside">
+            报酬：$70
+          </div>
+        </div>
+        <div class="footerleftmiddle">
+          物品描述：保持外包装完好，谢谢。
+        </div>
+        <div class="footerleftbottom">
+          <button class="btn btn-default btn-lg cancel" id="phonenumber">拨打电话</button>
+          <button class="btn btn-default btn-lg editor" >行程追踪</button>
+        </div>
+      </div><!--footerleft-->
+      <div class="footerright">
+        <img src="../img/fa/blueberry.jpg" alt="" id="pic">
+      </div><!--footerright-->
+    </div><!--footer-->
+  </div><!--yqh-->
+ </div><!--yqh--></div><!--yqhmask-->
+ <!-- 已完成 -->
+ <div id="ywcmask">
+ <div id="ywc">
+   <p>我是已完成</p>
+ </div><!--djd--></div><!--ywcmask-->
+ <!-- 已取消 -->
+ <div id="yqxmask">
+ <div id="yqx">
+   <div id="top">
+      <div class="lefttop"><span>物品名称：蓝莓</span></div>
+      
+      <div class="righttop"><span> <img alt="待接单" src="../img/fa/已取消.png"></span></div><!--righttop-->
+    </div><!--top-->
+    <div id="middle">
+      <div class="middletop">
+        <div class="middletopleft">
+          <img src="../img/fa/qi.png" alt=""><span>日本大阪</span>
+        </div><!--middletopleft-->
+        <div class="middletopmiddle"><br><p>.............................................</p></div><!--middletopmiddle-->
+        <div class="middletopright">
+          <img src="../img/fa/zhong.png" alt=""><span>加拿大温哥华</span>
+        </div><!--middletopright-->
+      </div><!--middletop-->
+      <div class="middlebottom">
+        <div class="middlebottomleft">
+          <span>取货时间：2016-8-8 12:20</span>
+        </div><!--middlebottomleft-->
+        <div class="middlebottomright">
+          <span>送达时间：2016-8-8 6:30</span>
+        </div><!--middlebottomright-->
+      </div><!--middlebottom-->
+    </div><!--middle-->
+    <div id="footer">
+      <div class="footerleft">
+        <div class="footerleftupleft">
+          <p>物品重量：50kg</p>
+          <p>物品价格：$200</p>
+        </div>
+        <div class="footerleftupright">
+          <div class="footerleftuprightinside">
+            报酬：￥60
+          </div>
+        </div>
+        <div class="footerleftmiddle">
+          物品描述：保持外包装完好，谢谢。
+        </div>
+        <div class="footerleftbottom">
+          <button class="btn btn-default btn-lg publish">编辑发布</button>
+          
+        </div>
+      </div><!--footerleft-->
+      <div class="footerright">
+        <img src="../img/fa/blueberry.jpg" alt="">
+      </div><!--footerright-->
+    </div><!--footer-->
+ </div><!--yqx--></div><!--yqxmask-->
+ <!-- 未取货 -->
+ <div id="wqhmask">
+ <div id="wqh">
+   <p>我是未取货</p>
+ </div><!--wqh--></div><!--wqhmask-->
+ <!-- 待评价 -->
+ <div id="dpjmask">
+ <div id="dpj">
+   <p>我是待评价</p>
+ </div><!--dpj--></div><!--dpjmask-->
+ </div><!--maskwrap-->
 </body>
 
 <script src="../js/iframe/jquery.js"></script>

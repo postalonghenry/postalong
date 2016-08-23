@@ -1,3 +1,92 @@
+
+//打开各个模态框
+function selectmodal (x){
+	switch (x)
+	{
+	case '已取货':
+	$('#yqhmask').css('display', 'block');
+	$('#phonenumber').click(function() {
+		$(this).html("6048589999")
+	});
+	$('button:contains(行程追踪)').click(function() {
+		
+		$("#pic").attr("src","../img/fa/map.png");
+	});
+		break;
+	case '待接单':
+	
+		$('#djdmask').siblings().css('display', 'none');
+	    $('#djdmask').css('display', 'block');
+
+	    if (sign==='ok') {
+			$('.editor').css('display', 'none');
+			$('.cancel').css('margin-left', '60%');
+			}else{
+					$('.cancel').css({
+						'margin-left': '20%',
+						'margin-top': '5px',
+						'float':'left'
+					});
+
+					$('.editor').css({
+						'display': 'block',
+						'margin-top': '5px',
+						'margin-left':'10%',
+						'float':'left'
+					});
+			}
+
+	   $('.cancel').click(function() {
+	  	
+	  $('#djdmask').css('display', 'none');
+		 window.reload(true)
+	  });
+
+	   
+	   break;
+	case '待付款':
+	  
+	  $('#dfkmask').css('display', 'block');
+	  $('.cancel').click(function() {
+	  	
+	  $('#dfkmask').css('display', 'none');
+	  });
+	   break;
+	case '已完成':
+	 
+	   $('#ywcmask').css('display', 'block');
+	   break;
+	case '已取消':
+	   
+	    $('#yqxmask').css('display', 'block');
+	   break;
+	case '议价中':
+	   
+	
+	 $('#yjmask').css('display', 'block');
+	   break;
+	case '未取货':
+	 
+	   $('#wqhmask').css('display', 'block');
+	   break;
+	case '待评价':
+	
+	   $('#dpjmask').css('display', 'block');
+	   break;
+	case '新订单':
+		sign='true';
+		$('#newordermask').css('display', 'block');
+		$('#newordermask').siblings().css('display', 'none');
+			break;
+	case '批量订单':
+		 sign='false';		//标记打开的是批量创建的模态框
+		$('#newordersmask').siblings().css('display', 'none');
+		$('#newordersmask').css('display', 'block');
+		break;
+	}
+}
+
+
 // 下面是左上五大功能效果
 
 $('.leftlinkmenu:eq(3)').hover(function() {
@@ -51,61 +140,33 @@ $('.leftlinkmenu:eq(4)').hover(function() {
 	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
 	$('.leftlinkmenu:eq(0)').css('opacity', '1');
 });
-// 创建新订单模态框
-var searchbutton=document.getElementById('searchbutton')
-var masking=document.getElementById('masking')
-var neworder=document.getElementById('neworder')
-var neworders=document.getElementById('neworders')
-searchbutton.onclick=function (){
-	masking.style.display='block'
-	neworders.style.display='none'
-	$('.yijiazhong').css('display', 'none');
-}
+// 创建新订单模态框的显示
+$('#searchbutton').click(function() {
+	sign='true'
+	selectmodal('新订单')
+		
+});
 // 关闭创建新订单模态框
 $('.ordercancel').click(function() {
-	$(this).parentsUntil('.fapostformb').removeClass('show')
-	$(this).parentsUntil('.fapostformb').addClass('hidden')
-	$('#masking').css('display', 'none');
-	window.location.reload();//刷新当前页面.
+			sign='ok'
+		$('#newordermask').css('display', 'none');
+	
 	
 });
 //批量发布订单显示
-var buttonforneworders=document.getElementById('buttonforneworders')
-	buttonforneworders.onclick=function () {
-		$("#neworder").removeClass("show");
-		$("#neworder").addClass("hidden");
-		$("#neworders").addClass("show");
-	}
+$('button:contains(批量发布订单)').click(function() {
+	
+	selectmodal('批量订单')
+
+});
 //克隆批量增加订单中内容
 
 function kelong(){
 $(".fapostformwhite").prev().clone(true).insertBefore('.fapostformwhite')
 }
-//打开待接单模态块
-$('.orderpublish').click(function() {
-	
-	if ($("#pendingorder").addClass('show')) {
-		
-		$('.biaoji').hide();
-		
-
-	} else {
-		$("#pendingorder").addClass('show')
-		$('.biaoji').hide();
-
-	}
-	
-	});
-//待接单按钮操作
-$('.editor').click(function() {
 
 
-$("#pendingorder").removeClass('show');
-$("#pendingorder").addClass('hidden')
-$('.biaoji').show();
-	/* Act on the event */
-});
-//smallcontent效果
+//smallcontent选中效果
 ;
 	$(".smallcontent").mouseenter(function(){
   $(this).siblings().css({
@@ -123,38 +184,26 @@ $('.biaoji').show();
 //得到八大块的具体内容
 $('.smallcontent').click(function() {
 	var status=$(this).children('.smallcontentright').children('.smallcontentrightDown').children('.smallcontentrightdownbox').children().html()
+	sign='ok'
+	selectmodal(status)			//调用selectmodal()函数
 	
-	switch (status)
-	{
-	case '已取货':
-	
-		alert(status)
-		break;
-	case '待接单':
-	   alert(status)
-	   break;
-	case '待付款':
-	   alert(status)
-	   break;
-	case '已完成':
-	   alert(status)
-	   break;
-	case '已取消':
-	   alert(status)
-	   break;
-	case '议价中':
-	   
-	  $('#masking').css('display', 'block');
-	   alert( $('#yijia').html())
-	   break;
-	case '未取货':
-	   alert(status)
-	   break;
-	case '待评价':
-	   alert(status)
-	   break;
-	}
 });
+//待接单--修改编辑--按钮
+
+$('.editor').click(function() {
+	if (sign==='true') {
+		selectmodal('新订单')
+	
+	}
+	if (sign==='false') {
+		selectmodal('批量订单')
+
+	}
+	
+});
+
+
+
 
 		
 	

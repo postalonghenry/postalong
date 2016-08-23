@@ -479,35 +479,24 @@ background-color: #FFFFFF;
 			}
 
 /*下面是发布订单modal的样式*/
-#masking{
+#djdmask,#dfkmask,#yqhmask,#twcmask,#yqxmask,#yjmask,#wqhmask,#dpjmask,#ywcmask{
 	width: 100%;
 	position:absolute;
     top:0px;
     left:0px;
-	height: 1000px;
-	background-color:rgba(144,146,147,0.4); 
+	height: 120%;
+	background-color:rgba(144,146,147,0.7); 
 	z-index: 99;
     display: none;
-    
-	}
-
-#masking .show{
-			margin-left:10%;
-			margin-right: 10%;
-			position: absolute;
-			left: 10%;
-			right: 10%;
-			top: 2%;
-			margin-bottom: 10px;
-			background: #FFFFFF;
-			border-radius: 10px;	
-			box-shadow: 3px 5px 3px black;	
-			z-index: 160;
-
 }
-#masking .hidden{
-			
-			display: hidden;
+#newordermask,#newordersmask{
+	width: 100%;
+	position:absolute;
+    top:0px;
+    left:0px;
+	background-color:rgba(144,146,147,0.7); 
+	z-index: 99;
+    display: none;
 
 }
 
@@ -726,7 +715,7 @@ margin-bottom: 0;
 			box-shadow: 10px 10px 5px #151A19;
 			display:none;
 			}
-	 #pendingorder #top{
+#pendingorder #top{
 	 	width: 90%;
 	 	height: 16%;
 	 	margin-left:5%;
@@ -734,7 +723,7 @@ margin-bottom: 0;
 	border-bottom: 1px solid #000000;
 	
 	}
-	 #pendingorder #top .lefttop{
+#pendingorder #top .lefttop{
 		width: 20%;
 		height: 63px;
 		float: left;
@@ -742,7 +731,7 @@ margin-bottom: 0;
 		line-height:63px; 
 
 		 }
-	 #pendingorder #top .righttop{
+#pendingorder #top .righttop{
 		width: 45%;
 		height: 63px;
 		margin-top: 60px;
@@ -750,12 +739,12 @@ margin-bottom: 0;
 		line-height:63px; 
 		
 		 }	
-	 #pendingorder #top .righttop img{
+#pendingorder #top .righttop img{
 	 	width: 55%;
 	 	height: 36px;
 	 	line-height:90px; 
 	 } 
-	 #pendingorder #middle{
+#pendingorder #middle{
 			width: 90%;
 			height: 26%;
 			margin-left:5%;
@@ -763,12 +752,12 @@ margin-bottom: 0;
 			border-bottom: 1px solid #000000;
 
 	}
-	#pendingorder #middle .middletop{
+#pendingorder #middle .middletop{
 
 		width: 100%;
 		height: 70%;
 			}
-	#pendingorder #middle .middletop .middletopleft{
+#pendingorder #middle .middletop .middletopleft{
 		width: 25%;
 		height: 100%;
 		float: left;
@@ -776,36 +765,36 @@ margin-bottom: 0;
 		margin-top:4px;
 	}
 
-	#pendingorder #middle .middletop .middletopleft span{
+#pendingorder #middle .middletop .middletopleft span{
 		line-height: 68px;
 		font-size: 30px;
 		float:left;
 		margin-left: 2%;
 	}
-	#pendingorder #middle .middletop .middletopright span{
+#pendingorder #middle .middletop .middletopright span{
 		line-height: 68px;
 		font-size: 30px;
 		float:left;
 		margin-left: 2%;
 	}
-	#pendingorder #middle .middletop .middletopleft img{
+#pendingorder #middle .middletop .middletopleft img{
 		width: 68px;
 		height: 68px;
 		float:left;
 	}
-	#pendingorder #middle .middletop .middletopmiddle{
+#pendingorder #middle .middletop .middletopmiddle{
 		width: 20%;
 		height: 100%;
 		float: left;
 		
 		
 	}
-	#pendingorder #middle .middletop .middletopright img{
+#pendingorder #middle .middletop .middletopright img{
 		width: 68px;
 		height: 68px;
 		float:left;
 	}
-	#pendingorder #middle .middletop .middletopright{
+#pendingorder #middle .middletop .middletopright{
 		width: 30%;
 		height: 100%;
 		float:right;
@@ -813,11 +802,11 @@ margin-bottom: 0;
 		margin-top:4px;
 	}
 
-	#pendingorder #middle .middlebottom{
+#pendingorder #middle .middlebottom{
 		width: 100%;
 		height: 30%;	
 	}
-	#pendingorder #middle .middlebottom .middlebottomleft{
+#pendingorder #middle .middlebottom .middlebottomleft{
 		width: 25%;
 		height: 100%;
 	
@@ -826,7 +815,7 @@ margin-bottom: 0;
 		text-align: center;
 		line-height: 31px;
 	}
-	#pendingorder #middle .middlebottom .middlebottomright{
+#pendingorder #middle .middlebottom .middlebottomright{
 		width: 30%;
 		height: 100%;
 
@@ -835,7 +824,7 @@ margin-bottom: 0;
 		text-align: center;
 		line-height: 31px;
 	}
-	#pendingorder #footer{
+#pendingorder #footer{
 	width: 90%;		
 	height: 58%;			
 	margin-left:5%;
@@ -843,24 +832,24 @@ margin-bottom: 0;
 	
 	}
 
-	#pendingorder #footer .footerleft{
+#pendingorder #footer .footerleft{
 		width: 60%;
 		height: 100%;
 		float: left;
 	
 	}
-	#pendingorder #footer .footerleft .footerleftupleft{
+#pendingorder #footer .footerleft .footerleftupleft{
 		width: 50%;
 		height: 58%;
 		float: left;
 		}
-	#pendingorder #footer .footerleft .footerleftupright{
+#pendingorder #footer .footerleft .footerleftupright{
 		width: 50%;
 		height: 58%;
 		float: right;
 		/*background: #FFCC02;*/
 	}
-	#pendingorder #footer .footerleft .footerleftupright .footerleftuprightinside{
+#pendingorder #footer .footerleft .footerleftupright .footerleftuprightinside{
 		width: 60%;
 		height: 58px;
 		margin-top: 20px;
@@ -872,63 +861,79 @@ margin-bottom: 0;
 		color:#FFFFFF;
 		font-weight: bold;
 	}
-	#pendingorder #footer .footerleft .footerleftmiddle{
+#pendingorder #footer .footerleft .footerleftmiddle{
 		width: 100%;
 		height: 20%;
 		float: left;
 		
 	}
-	#pendingorder #footer .footerleft .footerleftbottom{
+#pendingorder #footer .footerleft .footerleftbottom{
 
 		width: 100%;
 		height: 22%;
 		float: left;
 		}
-		#pendingorder #footer .footerleft .footerleftbottom .cancel{
+#pendingorder #footer .footerleft .footerleftbottom .cancel{
 		margin-left:10%;
 		width: 221px;
 		background:#949599;
 		color: #FFFFFF;
 		margin-top:3px;
 	}
-	#pendingorder #footer .footerleft .footerleftbottom .editor{
+#pendingorder #footer .footerleft .footerleftbottom .editor{
 		margin-left:10%;
 		width: 221px;
 		background:#21B796;
 		color: #FFFFFF;
 		margin-top:3px;
 	}
-	#pendingorder #footer .footerright{
+#pendingorder #footer .footerright{
 		width: 40%;
 		height: 100%;
 		float: right;
 	
 		}
-	#pendingorder #footer .footerright img{
+#pendingorder #footer .footerright img{
 		width: 70%;
 		height: 70%;
 		border-radius: 30px;
 		margin-left: 30%;
 		margin-top: 10%;
 	}
-	//议价中
-	#yijiazhong{
+/*待接单,待付款,已取货,已完成,已取消,议价,未取货,待评价*/
+#djd ,#dfk,#yqh,#ywc,#yqx,#yj,#wqh,#dpj{
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 5%;
+		height: 70%;
+   		background: #FFFFFF;
+		border-radius: 10px;	
+		z-index: 100;	
+		box-shadow: 10px 10px 5px #151A19;
 	
-			margin-left:10%;
-			margin-right: 10%;
-			position: absolute;
-			left: 10%;
-			right: 10%;
-			top: 10%;
-			bottom: 10%;
-			background: #C53232;
-			border-radius: 10px;	
-			z-index: 500;
-			box-shadow: 10px 10px 5px #151A19;
-			display: none;
+}
+#neworder{
 
-			}
-	 .yijiazhong #top{
+    	width: 80%;
+    	margin-left: 10%;
+    	height: 1110px;
+   		background: #FFFFFF;
+		border-radius: 10px;	
+		z-index: 100;	
+		box-shadow: 10px 10px 5px #151A19;
+
+}
+#neworders{
+		width: 80%;
+    	margin-left: 10%;
+    	background: #FFFFFF;
+		border-radius: 10px;	
+		z-index: 100;	
+		box-shadow: 10px 10px 5px #151A19;
+
+}
+/*带接单*/
+ #djd #top{
 	 	width: 90%;
 	 	height: 16%;
 	 	margin-left:5%;
@@ -936,27 +941,26 @@ margin-bottom: 0;
 	border-bottom: 1px solid #000000;
 	
 	}
-	 .yijiazhong #top .lefttop{
+	 #djd #top .lefttop{
 		width: 20%;
 		height: 63px;
 		float: left;
-		margin-top: 40px;
 		line-height:63px; 
+
 		 }
-	 .yijiazhong #top .righttop{
+	 #djd #top .righttop{
 		width: 45%;
 		height: 63px;
 		float: right;
-		margin-top: 40px;
 		line-height:63px; 
 		
 		 }	
-	 .yijiazhong #top .righttop img{
+	 #djd #top .righttop img{
 	 	width: 55%;
 	 	height: 36px;
 	 	line-height:90px; 
 	 } 
-	 .yijiazhong #middle{
+	 #djd #middle{
 			width: 90%;
 			height: 26%;
 			margin-left:5%;
@@ -964,12 +968,12 @@ margin-bottom: 0;
 			border-bottom: 1px solid #000000;
 
 	}
-	.yijiazhong #middle .middletop{
+	#djd #middle .middletop{
 
 		width: 100%;
 		height: 70%;
 			}
-	.yijiazhong #middle .middletop .middletopleft{
+	#djd #middle .middletop .middletopleft{
 		width: 25%;
 		height: 100%;
 		float: left;
@@ -977,36 +981,36 @@ margin-bottom: 0;
 		margin-top:4px;
 	}
 
-	.yijiazhong #middle .middletop .middletopleft span{
+	#djd #middle .middletop .middletopleft span{
 		line-height: 68px;
 		font-size: 30px;
 		float:left;
 		margin-left: 2%;
 	}
-	.yijiazhong #middle .middletop .middletopright span{
+	#djd #middle .middletop .middletopright span{
 		line-height: 68px;
 		font-size: 30px;
 		float:left;
 		margin-left: 2%;
 	}
-	.yijiazhong #middle .middletop .middletopleft img{
+	#djd #middle .middletop .middletopleft img{
 		width: 68px;
 		height: 68px;
 		float:left;
 	}
-	.yijiazhong #middle .middletop .middletopmiddle{
+	#djd #middle .middletop .middletopmiddle{
 		width: 20%;
 		height: 100%;
 		float: left;
 		
 		
 	}
-	.yijiazhong #middle .middletop .middletopright img{
+	#djd #middle .middletop .middletopright img{
 		width: 68px;
 		height: 68px;
 		float:left;
 	}
-	.yijiazhong #middle .middletop .middletopright{
+	#djd #middle .middletop .middletopright{
 		width: 30%;
 		height: 100%;
 		float:right;
@@ -1014,11 +1018,11 @@ margin-bottom: 0;
 		margin-top:4px;
 	}
 
-	.yijiazhong #middle .middlebottom{
+	#djd #middle .middlebottom{
 		width: 100%;
 		height: 30%;	
 	}
-	.yijiazhong #middle .middlebottom .middlebottomleft{
+	#djd #middle .middlebottom .middlebottomleft{
 		width: 25%;
 		height: 100%;
 	
@@ -1027,7 +1031,7 @@ margin-bottom: 0;
 		text-align: center;
 		line-height: 31px;
 	}
-	.yijiazhong #middle .middlebottom .middlebottomright{
+	#djd #middle .middlebottom .middlebottomright{
 		width: 30%;
 		height: 100%;
 
@@ -1036,7 +1040,7 @@ margin-bottom: 0;
 		text-align: center;
 		line-height: 31px;
 	}
-	.yijiazhong .di{
+	#djd #footer{
 	width: 90%;		
 	height: 58%;			
 	margin-left:5%;
@@ -1044,24 +1048,24 @@ margin-bottom: 0;
 	
 	}
 
-	.yijiazhong .di .dileft{
+	#djd #footer .footerleft{
 		width: 60%;
 		height: 100%;
 		float: left;
 	
 	}
-	.yijiazhong .di .dileft .dileftupleft{
+	#djd #footer .footerleft .footerleftupleft{
 		width: 50%;
 		height: 58%;
 		float: left;
 		}
-	.yijiazhong .di .dileft .dileftupright{
+	#djd #footer .footerleft .footerleftupright{
 		width: 50%;
 		height: 58%;
 		float: right;
 		/*background: #FFCC02;*/
 	}
-	.yijiazhong .di .dileft .dileftupright .dileftuprightinside{
+	#djd #footer .footerleft .footerleftupright .footerleftuprightinside{
 		width: 60%;
 		height: 58px;
 		margin-top: 20px;
@@ -1073,47 +1077,654 @@ margin-bottom: 0;
 		color:#FFFFFF;
 		font-weight: bold;
 	}
-	.yijiazhong .di .dileft .dileftmiddle{
+	#djd #footer .footerleft .footerleftmiddle{
 		width: 100%;
 		height: 20%;
 		float: left;
 		
 	}
-	.yijiazhong .di .dileft .dileftbottom{
+	#djd #footer .footerleft .footerleftbottom{
 
 		width: 100%;
 		height: 22%;
 		float: left;
 		}
-	.yijiazhong .di .dileft .dileftbottom .cancel{
+		#djd #footer .footerleft .footerleftbottom .cancel{
 		margin-left:10%;
 		width: 221px;
-		height: 61px;
 		background:#949599;
 		color: #FFFFFF;
 		margin-top:3px;
-		box-shadow: 10px 10px 5px #A0A0A0;
 	}
-	.yijiazhong .di .dileft .dileftbottom .editor{
+	#djd #footer .footerleft .footerleftbottom .editor{
 		margin-left:10%;
 		width: 221px;
-		height: 61px;
 		background:#21B796;
 		color: #FFFFFF;
 		margin-top:3px;
-		box-shadow: 10px 10px 5px #A0A0A0;
 	}
-	.yijiazhong .di .diright{
+	#djd #footer .footerright{
 		width: 40%;
 		height: 100%;
 		float: right;
 	
 		}
-	.yijiazhong .di .diright img{
+	#djd #footer .footerright img{
 		width: 70%;
 		height: 70%;
 		border-radius: 30px;
 		margin-left: 30%;
 		margin-top: 10%;
 	}
+/********************待付款开始*******************************/
+ #dfk #top{
+	 	width: 90%;
+	 	height: 16%;
+	 	margin-left:5%;
+	 	margin-right: 5%;
+	border-bottom: 1px solid #000000;
+	
+	}
+	 #dfk #top .lefttop{
+		width: 20%;
+		height: 63px;
+		float: left;
+		line-height:63px; 
+		margin-top: 28px;
+		 }
+	 #dfk #top .righttop{
+		width: 45%;
+		height: 63px;
+		float: right;
+		line-height:63px; 
+		margin-top: 28px;
+		 }	
+	 #dfk #top .righttop img{
+	 	width: 55%;
+	 	height: 36px;
+	 	line-height:90px; 
+	 } 
+	 #dfk #middle{
+			width: 90%;
+			height: 22%;
+			margin-left:5%;
+			margin-right: 5%;
+			border-bottom: 1px solid #000000;
+				}
+	#dfk #middle .middletop{
 
+		width: 100%;
+		height: 60%;
+		margin-top: 20px;
+						}
+	#dfk #middle .middletop .middletopleft{
+		width: 25%;
+		height: 100%;
+		float: left;
+		margin-left: 10%;
+		margin-top:4px;
+	}
+
+	#dfk #middle .middletop .middletopleft span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#dfk #middle .middletop .middletopright span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#dfk #middle .middletop .middletopleft img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#dfk #middle .middletop .middletopmiddle{
+		width: 20%;
+		height: 100%;
+		float: left;
+		
+		
+	}
+	#dfk #middle .middletop .middletopright img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#dfk #middle .middletop .middletopright{
+		width: 30%;
+		height: 100%;
+		float:right;
+		margin-right: 10%;
+		margin-top:4px;
+	}
+
+	#dfk #middle .middlebottom{
+		width: 100%;
+		height: 30%;	
+	}
+	#dfk #middle .middlebottom .middlebottomleft{
+		width: 25%;
+		height: 100%;
+	
+		float: left;
+		margin-left: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#dfk #middle .middlebottom .middlebottomright{
+		width: 30%;
+		height: 100%;
+
+		float:right;
+		margin-right: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#dfk #footer{
+	width: 90%;		
+	height: 53%;			
+	margin-left:5%;
+	margin-right: 5%;
+	
+	}
+	#dfk #footer .footerup{
+		width: 100%;
+		height: 24%;
+		
+	}
+	#dfk #footer .footerup .footerup-up{
+		width: 100%;
+		height: 50%;
+	}
+	#dfk #footer .footerup .footerup-up .footerup-up-left{
+		width: 50%;
+		height: 100%;
+		float:left;
+		line-height: 29px;
+	}
+	#dfk #footer .footerup .footerup-up .footerup-up-right{
+		width: 50%;
+		height: 100%;
+		float: left;
+		line-height: 29px;		
+	}
+	#dfk #footer .footerup .footerup-down{
+		width: 100%;
+		height: 50%;
+		}
+	#dfk #footer .footerup .footerup-down .footerup-down-left{
+		width: 30%;
+		height: 100%;
+		float: left;
+		margin-left: 5%;
+		
+	}
+	#dfk #footer .footerup .footerup-down .footerup-down-middle{
+		width: 30%;
+		height: 100%;
+		float: left;
+		
+	}
+	#dfk #footer .footerup .footerup-down .footerup-down-right{
+		width: 30%;
+		height: 100%;
+		float: left;
+		margin-right: 5%;
+		
+	}
+	
+	#dfk #footer .footermiddle{
+		width: 100%;
+		height: 60%;
+
+		}
+	#dfk #footer .footermiddle .footermiddle-left{
+		width: 50%;
+		height: 100%;
+		float: left;
+		background: #F2F2F2;
+		border-bottom-left-radius:30px;
+		border-top-left-radius:30px;
+		padding-left: 6%;
+		padding-top: 10px;
+
+	}
+	#dfk #footer .footermiddle .footermiddle-left input{
+		width: 70%;
+	}
+	#dfk #footer .footermiddle .footermiddle-right{
+		width: 50%;
+		height: 100%;
+		float: left;
+		background: #F2F2F2;
+		border-bottom-right-radius:30px;
+		border-top-right-radius:30px;
+		padding-top: 30px;
+	}
+	#dfk #footer .footermiddle .footermiddle-right input{
+		width: 50%;
+		margin-top: 30px;
+		margin-left:30%;
+	}
+
+	#dfk #footer .footerbottom{
+		width: 100%;
+		height: 20%;
+	}
+
+	#dfk #footer .footerbottom .cancel{
+		width: 20%;
+		height: 63px;
+		background: #949599;
+		color:#FFFFFF;
+		margin-left: 20%;
+		margin-top: 20px;
+		font-size: 20px;
+		border:0px;
+		border-radius: 26px;
+		box-shadow: 10px 10px 10px #ADADAD;
+	}
+	#dfk #footer .footerbottom .pay{
+		width: 20%;
+		height: 63px;
+		background: #21B796;
+		color:#FFFFFF;
+		margin-left: 20%;
+		margin-top: 20px;
+		font-size: 20px;
+		border:0px;
+		border-radius: 26px;
+		box-shadow: 10px 10px 10px #ADADAD;
+	}
+/*************************已取货开始*****************************************/
+ #yqh #top{
+	 	width: 90%;
+	 	height: 16%;
+	 	margin-left:5%;
+	 	margin-right: 5%;
+	border-bottom: 1px solid #000000;
+	
+	}
+	 #yqh #top .lefttop{
+		width: 20%;
+		height: 63px;
+		float: left;
+		line-height:63px; 
+		 }
+	#yqh #top .topmiddle{
+		width: 30%;
+		height: 63px;
+		float: left;
+		line-height:63px; 
+		background: #21B796;
+		border-radius: 20px;
+		border:1px solid white;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 63px;
+		font-size: 20px;
+	}
+	#yqh #top .topmiddle b{
+		color: #FFFFFF;
+
+	}
+	 #yqh #top .righttop{
+		width: 45%;
+		height: 63px;
+		float: right;
+		line-height:63px; 
+		
+		 }	
+	 #yqh #top .righttop img{
+	 	width: 55%;
+	 	height: 36px;
+	 	line-height:90px; 
+	 } 
+	 #yqh #middle{
+			width: 90%;
+			height: 26%;
+			margin-left:5%;
+			margin-right: 5%;
+			border-bottom: 1px solid #000000;
+
+	}
+	#yqh #middle .middletop{
+
+		width: 100%;
+		height: 70%;
+			}
+	#yqh #middle .middletop .middletopleft{
+		width: 25%;
+		height: 100%;
+		float: left;
+		margin-left: 10%;
+		margin-top:4px;
+	}
+
+	#yqh #middle .middletop .middletopleft span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#yqh #middle .middletop .middletopright span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#yqh #middle .middletop .middletopleft img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#yqh #middle .middletop .middletopmiddle{
+		width: 20%;
+		height: 100%;
+		float: left;
+		
+		
+	}
+	#yqh #middle .middletop .middletopright img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#yqh #middle .middletop .middletopright{
+		width: 30%;
+		height: 100%;
+		float:right;
+		margin-right: 10%;
+		margin-top:4px;
+	}
+
+	#yqh #middle .middlebottom{
+		width: 100%;
+		height: 30%;	
+	}
+	#yqh #middle .middlebottom .middlebottomleft{
+		width: 25%;
+		height: 100%;
+	
+		float: left;
+		margin-left: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#yqh #middle .middlebottom .middlebottomright{
+		width: 30%;
+		height: 100%;
+
+		float:right;
+		margin-right: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#yqh #footer{
+	width: 90%;		
+	height: 58%;			
+	margin-left:5%;
+	margin-right: 5%;
+	
+	}
+
+	#yqh #footer .footerleft{
+		width: 60%;
+		height: 100%;
+		float: left;
+	
+	}
+	#yqh #footer .footerleft .footerleftupleft{
+		width: 50%;
+		height: 58%;
+		float: left;
+		}
+	#yqh #footer .footerleft .footerleftupright{
+		width: 50%;
+		height: 58%;
+		float: right;
+		/*background: #FFCC02;*/
+	}
+	#yqh #footer .footerleft .footerleftupright .footerleftuprightinside{
+		width: 60%;
+		height: 58px;
+		margin-top: 20px;
+		margin-right:20%;
+		float:right;
+		background: #FFCC02;
+		text-align: center;
+		line-height: 58px;
+		color:#FFFFFF;
+		font-weight: bold;
+	}
+	#yqh #footer .footerleft .footerleftmiddle{
+		width: 100%;
+		height: 20%;
+		float: left;
+		
+	}
+	#yqh #footer .footerleft .footerleftbottom{
+
+		width: 100%;
+		height: 22%;
+		float: left;
+		}
+	#yqh #footer .footerleft .footerleftbottom .cancel{
+		margin-left:10%;
+		width: 221px;
+		height: 61px;
+		background:#21B796;
+		color: #FFFFFF;
+		margin-top:3px;
+		box-shadow: 10px 10px 5px #B6B6B6;
+	}
+	#yqh #footer .footerleft .footerleftbottom .editor{
+		margin-left:10%;
+		width: 221px;
+		height: 61px;
+		background:#FFCC02;
+		color: #FFFFFF;
+		margin-top:3px;
+		box-shadow: 10px 10px 5px #B6B6B6;
+	}
+	#yqh #footer .footerright{
+		width: 40%;
+		height: 100%;
+		float: right;
+	
+		}
+	#yqh #footer .footerright img{
+		width: 70%;
+		height: 70%;
+		border-radius: 30px;
+		margin-left: 30%;
+		margin-top: 10%;
+	}
+	/*******************************已取消*******************************/
+	 #yqx #top{
+	 	width: 90%;
+	 	height: 16%;
+	 	margin-left:5%;
+	 	margin-right: 5%;
+	border-bottom: 1px solid #000000;
+	
+	}
+	 #yqx #top .lefttop{
+		width: 20%;
+		height: 63px;
+		float: left;
+		line-height:63px; 
+		 }
+	
+	#yqx #top .topmiddle b{
+		color: #FFFFFF;
+
+	}
+	 #yqx #top .righttop{
+		width: 45%;
+		height: 63px;
+		float: right;
+		line-height:63px; 
+		
+		 }	
+	 #yqx #top .righttop img{
+	 	width: 40%;
+	 	height: 40px;
+	 	margin-top: 30px;
+	 	float:right;
+	 } 
+	 #yqx #middle{
+			width: 90%;
+			height: 26%;
+			margin-left:5%;
+			margin-right: 5%;
+			border-bottom: 1px solid #000000;
+
+	}
+	#yqx #middle .middletop{
+
+		width: 100%;
+		height: 70%;
+			}
+	#yqx #middle .middletop .middletopleft{
+		width: 25%;
+		height: 100%;
+		float: left;
+		margin-left: 10%;
+		margin-top:4px;
+	}
+
+	#yqx #middle .middletop .middletopleft span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#yqx #middle .middletop .middletopright span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#yqx #middle .middletop .middletopleft img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#yqx #middle .middletop .middletopmiddle{
+		width: 20%;
+		height: 100%;
+		float: left;
+		
+		
+	}
+	#yqx #middle .middletop .middletopright img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#yqx #middle .middletop .middletopright{
+		width: 30%;
+		height: 100%;
+		float:right;
+		margin-right: 10%;
+		margin-top:4px;
+	}
+
+	#yqx #middle .middlebottom{
+		width: 100%;
+		height: 30%;	
+	}
+	#yqx #middle .middlebottom .middlebottomleft{
+		width: 25%;
+		height: 100%;
+	
+		float: left;
+		margin-left: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#yqx #middle .middlebottom .middlebottomright{
+		width: 30%;
+		height: 100%;
+
+		float:right;
+		margin-right: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#yqx #footer{
+	width: 90%;		
+	height: 58%;			
+	margin-left:5%;
+	margin-right: 5%;
+	
+	}
+
+	 #yqx #footer .footerleft{
+		width: 60%;
+		height: 100%;
+		float: left;
+	
+	}
+	 #yqx #footer .footerleft .footerleftupleft{
+		width: 50%;
+		height: 58%;
+		float: left;
+		}
+	 #yqx #footer .footerleft .footerleftupright{
+		width: 50%;
+		height: 58%;
+		float: right;
+		/*background: #FFCC02;*/
+	}
+	 #yqx #footer .footerleft .footerleftupright .footerleftuprightinside{
+		width: 60%;
+		height: 58px;
+		margin-top: 20px;
+		margin-right:20%;
+		float:right;
+		background: #FFCC02;
+		text-align: center;
+		line-height: 58px;
+		color:#FFFFFF;
+		font-weight: bold;
+	}
+	 #yqx #footer .footerleft .footerleftmiddle{
+		width: 100%;
+		height: 20%;
+		float: left;
+		
+	}
+	 #yqx #footer .footerleft .footerleftbottom{
+
+		width: 100%;
+		height: 22%;
+		float: left;
+		}
+	 #yqx #footer .footerleft .footerleftbottom .publish{
+		margin-left:40%;
+		width: 221px;
+		background:#21B796;
+		color: #FFFFFF;
+		margin-top:3px;
+	}
+	
+	 #yqx #footer .footerright{
+		width: 40%;
+		height: 100%;
+		float: right;
+	
+		}
+	 #yqx #footer .footerright img{
+		width: 70%;
+		height: 70%;
+		border-radius: 30px;
+		margin-left: 30%;
+		margin-top: 10%;
+	}
+	
