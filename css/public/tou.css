@@ -1,29 +1,25 @@
-body{
-	font-family: Microsoft Yahei;
-		font-size:100%;
+
+
+
+		.languagesize select{
+		width: 80%;
+		}
+ul.nav-menu li a.current {
+    border-bottom: 4px grey solid;
 }
 
-img{
-	height: 50px;
-	width: 100%;
-
-
-}
 		
-	#tou{
-		width: 100%;	
-	}
-	.zuobian{
-		/*width: 15%;*/
-		
-		float: left;
-
+	.tou{
+		background-color: lightgrey;
 	}
 
+.logo img{
+			height: 40px;
+			padding-top: 10px;}
 
 	
 ul.nav-menu{
-	margin-top: 0px;
+	
   line-height: 50px;  
   float: right; 
 }
@@ -35,17 +31,17 @@ ul.nav-menu li a{
 	color: black;
 	font-size: 20px;
 	text-decoration: none;
-	padding-left: 10px;
+	padding-left: 0px;
+		padding-right: 5px;
 
 }
-#imgclass{
 
-color: black;
 
+.tousharesize{
+	padding-right: 5px;
 }
-#btn-2{
-	height: 0;
-	overflow: hidden;
+.toulanguagesize{
+	padding-right: 5px;
 }
 
 /*xs*/
@@ -59,36 +55,42 @@ color: black;
 			overflow: visible;
 		}
 		
-				
+		
 	}
 /*sm*/
 	@media (min-width:768px) and (max-width:992px){
 	
 
-	
+ul.nav-menu li a{
+		font-size: small;
+		padding-right: 2px;
+	}
+
+.logo img{
+			height: 40px;
+			padding-top: 10px;
+			}
 
 
-	img{
-		width: 150%;
+		.formcontral:{padding:0px;}
+
 	}
-	ul.nav-menu li a{
-		padding-left: 5px;
-	}
-	}
+
+
 	/*md*/
 	@media (min-width:992px) and (max-width:1200px){
 	
-	img{
-		width: 150%;
+	.logo img{
+			height: 40px;
+			padding-top: 10px;
 	}
 	ul li a{
 		font-size: 12px;
 	}
 			
 	}
-	
-	@media (min-width:1200px){
-	
-
+	li{
+		padding-right: 0px;
 
 	}
+	
