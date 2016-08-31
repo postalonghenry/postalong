@@ -1,10 +1,10 @@
 .flag {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: purple;
   color: white;
-  font-size: 15px;
+  /*font-size:120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -25,12 +25,12 @@
   border-bottom: 15px solid transparent;
 }
 .flag1 {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: #FFDA41;
   color: white;
-  font-size: 15px;
+  /*font-size: 120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -52,12 +52,12 @@
 }
     
 .flag2 {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: #1F4A66;
   color: white;
-  font-size: 15px;
+  /*font-size: 120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -80,12 +80,12 @@
 
    
 .flag3 {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: #1F2FE0;
   color: white;
-  font-size: 15px;
+  /*font-size: 120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -106,12 +106,12 @@
   border-bottom: 15px solid transparent;
 }
 .flag4 {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: #21b796;
   color: white;
-  font-size: 15px;
+  /*font-size: 120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -133,12 +133,12 @@
 }
 
 .flag5 {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: darkred;
   color: white;
-  font-size: 15px;
+  /*font-size: 120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -161,12 +161,12 @@
 
 
 .flag6 {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: #65E4C2;
   color: white;
-  font-size: 15px;
+  /*font-size: 120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -188,12 +188,12 @@
 }
 
 .flag7 {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: #eeeeee;
   color: white;
-  font-size: 15px;
+  /*font-size: 120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -209,17 +209,17 @@
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 16px solid white;
+  border-left: px solid white;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
 .flag8 {
-  width: 106px;
+  width: 90%;
   height: 30px;
   position: relative;
   background: #00738C;
   color: white;
-  font-size: 15px;
+  /*font-size: 120%;*/
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
