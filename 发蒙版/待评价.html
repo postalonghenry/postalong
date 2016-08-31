@@ -68,11 +68,13 @@
     <hr>
     </div>
 <div class="ratelist">
+<div id="wrapstar">
   <div class="star-five starrates"></div>
   <div class="star-five starrates"></div>
   <div class="star-five starrates"></div>
   <div class="star-five starrates"></div>
   <div class="star-five starrates"></div>
+  </div>
   <div class="ratefont">
   <h1>1</h1>
   <h1>2</h1>
@@ -87,5 +89,22 @@
 
 	</div><!--end child-->
 </body>
-
+<script src="jquery.js"></script>
+<script>
+//移动鼠标评选星级
+$('.starrates').mouseenter(function() {
+   
+    var j=parseInt($(this).index())
+    $(this).removeClass('star-five').addClass('change');
+    $(".starrates").slice(0, j).removeClass('star-five').addClass('change')
+    
+  });
+  
+ //单击修改星级，至少选一个星
+$('.starrates').click(function() {
+   $(this).removeClass('change').addClass('star-five')
+   $(this).nextAll().removeClass('change').addClass('star-five')
+ })
+  
+</script>
 </html>
