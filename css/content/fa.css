@@ -140,24 +140,37 @@ background-color: #FFFFFF;
 	}
 	
 	/***************************************************************/
-	#content .pageheader{
-		width: 19.4%;
+#content .pageheader{
+		width: 19.9%;
 		height: 50px;
 		background:#21B796;
-		color:#FFFFFF;
 		text-align: center;
 		line-height: 50px;
-		font-size: 200%;
+		font-size: 150%;
 		font-weight: bold;
 		float:left;
-		margin-left: 0.5%;
+		
 	}
+.dropdown-menu{
+		background:#21B796;
+		
+	}
+	.dropdown-menu li a{
+		color:#FFFFFF;
+	}
+	a:link{ color:#FFFFFF;text-align: center} /* 未访问的链接 */
+	a:visited{color:#FFFFFF;text-align: center} /* 已访问的链接 */
+	a:hover{ color:#FFFFFF;text-align: center}/* 鼠标在链接上 */
+	a:active{ color:#FFFFFF;text-align: center}/* 点击激活链接 */ 
+
+	
+	/**********************************************************/
 	#content .smallcontent{
 		width: 19.4%;
 		height: 185px;
 		background: #FFFFFF;
 		border-radius: 10px;
-		
+		z-index: 0;
 		float:left;
 		margin-left: 0.5%;
 		margin-top: 13px;
